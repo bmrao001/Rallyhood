@@ -1,0 +1,2 @@
+Senario Name,Test Name,Browser Name,Os Name,Test Status,Test Data Row,Link to Screen Shot,Error Log,Test Type
+Rallyhoodtestcases,RallyhoodTC_01,firefox,WIN10,Fail,RH1,file://E:/HarmonyCoreiFusion/ScreenShots/Rallyhoodtestcases_RallyhoodTC_01_WIN10_firefox.png,"java.lang.AssertionError: Test case failed due to exception Index: 2  Size: 2 expected [true] but found [false]",Smoke

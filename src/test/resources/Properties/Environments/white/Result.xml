@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="3" result="Failed" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="2" engine-version="3.7.0.0" clr-version="4.0.30319.42000" start-time="2017-10-04 12:15:25Z" end-time="2017-10-04 12:20:37Z" duration="310.599069">
+  <command-line><![CDATA[D:\streamlined\HarmonyCore\src\test\resources\Properties\Environments\white\nunit3\nunit3-console.exe D:\streamlined\HarmonyCore\src\test\resources\Properties\Environments\\white\Demo/NUnit.OfficeAppsTests/NUnit.OfficeAppsTests/NUnit.OfficeAppsTests.csproj --result:D:\streamlined\HarmonyCore\src\test\resources\Properties\Environments\\white\Result.xml]]></command-line>
+  <test-suite type="Assembly" id="1-1004" name="NUnit.OfficeAppsTests.dll" fullname="D:\streamlined\HarmonyCore\src\test\resources\Properties\Environments\white\Demo\NUnit.OfficeAppsTests\NUnit.OfficeAppsTests\bin\Debug\NUnit.OfficeAppsTests.dll" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2017-10-04 12:15:27Z" end-time="2017-10-04 12:20:37Z" duration="308.684832" total="3" passed="2" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="2">
+    <environment framework-version="3.6.1.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.10240.0" platform="Win32NT" cwd="D:\streamlined\HarmonyCore" machine-name="IM-LP-719" user="cpinnamaraju" user-domain="INNOMINDSHYD" culture="en-IN" uiculture="en-GB" os-architecture="x64" />
+    <settings>
+      <setting name="BasePath" value="D:\streamlined\HarmonyCore\src\test\resources\Properties\Environments\white\Demo\NUnit.OfficeAppsTests\NUnit.OfficeAppsTests\bin\Debug\" />
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="D:\streamlined\HarmonyCore" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.6.1" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="11760" />
+      <property name="_APPDOMAIN" value="domain-9dc30ff4-NUnit.OfficeAppsTests.csproj" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1-1005" name="TestStack" fullname="TestStack" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2017-10-04 12:15:27Z" end-time="2017-10-04 12:20:37Z" duration="308.578992" total="3" passed="2" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="2">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1-1006" name="White" fullname="TestStack.White" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2017-10-04 12:15:27Z" end-time="2017-10-04 12:20:37Z" duration="308.566604" total="3" passed="2" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="2">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1-1007" name="UITests" fullname="TestStack.White.UITests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2017-10-04 12:15:27Z" end-time="2017-10-04 12:20:37Z" duration="308.563999" total="3" passed="2" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="2">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1-1008" name="Scenarios" fullname="TestStack.White.UITests.Scenarios" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2017-10-04 12:15:27Z" end-time="2017-10-04 12:20:37Z" duration="308.559474" total="3" passed="2" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="2">
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1-1000" name="WordTests" fullname="TestStack.White.UITests.Scenarios.WordTests" classname="TestStack.White.UITests.Scenarios.WordTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2017-10-04 12:15:27Z" end-time="2017-10-04 12:20:37Z" duration="308.543963" total="3" passed="2" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="2">
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1-1002" name="ExcelSecurityTest" fullname="TestStack.White.UITests.Scenarios.WordTests.ExcelSecurityTest" methodname="ExcelSecurityTest" classname="TestStack.White.UITests.Scenarios.WordTests" runstate="Runnable" seed="1067679152" result="Passed" start-time="2017-10-04 12:15:27Z" end-time="2017-10-04 12:17:14Z" duration="106.164463" asserts="1">
+                <output><![CDATA[[Info - 17:45:32] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using TableVerticalScrollBar=Vertical Scroll Bar for White/UIItemId
+[Info - 17:45:32] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using TableHorizontalScrollBar=Horizontal Scroll Bar for White/UIItemId
+[Info - 17:45:32] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using TableColumn=Row  for White/UIItemId
+[Info - 17:45:32] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using TableTopLeftHeaderCell=Top Left Header Cell for White/UIItemId
+[Info - 17:45:32] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using TableCellNullValue=(null) for White/UIItemId
+[Info - 17:45:32] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using TableHeader=Top Row for White/UIItemId
+[Info - 17:45:32] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using HorizontalScrollBar=Horizontal ScrollBar for White/UIItemId
+[Info - 17:45:32] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using VerticalScrollBar=Vertical ScrollBar for White/UIItemId
+[Info - 17:45:32] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using TableCellPrefix= Row  for White/UIItemId
+[Info - 17:45:32] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using BrowseText=Browse... for White/UIItemId
+[Info - 17:45:32] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using OpenFileDialogTitle=Open File for White/UIItemId
+[Info - 17:45:32] 'TestStack.White.Configuration.UIItemIdAppXmlConfiguration' Using PropertyGridMiscText=Misc for White/UIItemId
+[Warn - 17:45:33] 'TestStack.White.UIItems.UIItem' Window with title: Excel whose dimensions are: -8,-8,1382,744, is not contained completely on the desktop 0,0,1366,768. 
+UI actions on window needing mouse would not work in area not falling under the desktop
+[Warn - 17:46:26] 'TestStack.White.UIItems.UIItem' Window with title: X1507119360899.99 - Excel whose dimensions are: -8,-8,1382,744, is not contained completely on the desktop 0,0,1366,768. 
+UI actions on window needing mouse would not work in area not falling under the desktop
+[Warn - 17:46:38] 'TestStack.White.UIItems.UIItem' Window with title: X1507119360899.99 - Excel whose dimensions are: -8,-8,1382,744, is not contained completely on the desktop 0,0,1366,768. 
+UI actions on window needing mouse would not work in area not falling under the desktop
+[Warn - 17:46:40] 'TestStack.White.UIItems.UIItem' Window with title: X1507119360899.99 - Excel whose dimensions are: -8,-8,1382,744, is not contained completely on the desktop 0,0,1366,768. 
+UI actions on window needing mouse would not work in area not falling under the desktop
+[Warn - 17:47:12] 'TestStack.White.UIItems.UIItem' Window with title: X1507119360899.99 - Excel whose dimensions are: -8,-8,1382,744, is not contained completely on the desktop 0,0,1366,768. 
+UI actions on window needing mouse would not work in area not falling under the desktop
+]]></output>
+              </test-case>
+              <test-case id="1-1003" name="OneNoteSecurityTest" fullname="TestStack.White.UITests.Scenarios.WordTests.OneNoteSecurityTest" methodname="OneNoteSecurityTest" classname="TestStack.White.UITests.Scenarios.WordTests" runstate="Runnable" seed="1923377529" result="Failed" label="Error" start-time="2017-10-04 12:17:14Z" end-time="2017-10-04 12:19:12Z" duration="117.663538" asserts="0">
+                <failure>
+                  <message><![CDATA[System.Windows.Automation.ElementNotAvailableException : The target element corresponds to UI that is no longer available (for example, the parent window has closed).
+   at MS.Internal.Automation.Misc.ThrowWin32ExceptionsIfError(Int32 errorCode)
+   at MS.Internal.Automation.HwndProxyElementProvider.System.Windows.Automation.Provider.IWindowProvider.Close()]]></message>
+                  <stack-trace><![CDATA[   at MS.Internal.Automation.UiaCoreApi.CheckError(Int32 hr)
+   at System.Windows.Automation.WindowPattern.Close()
+   at TestStack.White.UIItems.WindowItems.Window.Close()
+   at TestStack.White.UIItems.WindowItems.Window.Dispose()
+   at TestStack.White.UITests.Scenarios.WordTests.CreateNotes(String wtitle, String testname, Boolean flag) in D:\Microsoft\Demo\NUnit.OfficeAppsTests\NUnit.OfficeAppsTests\OfficeAppsTests.cs:line 406
+   at TestStack.White.UITests.Scenarios.WordTests.OneNoteSecurityTest() in D:\Microsoft\Demo\NUnit.OfficeAppsTests\NUnit.OfficeAppsTests\OfficeAppsTests.cs:line 255]]></stack-trace>
+                </failure>
+                <output><![CDATA[[Warn - 17:47:15] 'TestStack.White.UIItems.UIItem' Window with title: OneNote: one place for all of your notes - OneNote whose dimensions are: -8,-8,1382,744, is not contained completely on the desktop 0,0,1366,768. 
+UI actions on window needing mouse would not work in area not falling under the desktop
+[Warn - 17:47:45] 'TestStack.White.UIItems.UIItem' Window with title: OneNote: one place for all of your notes - OneNote whose dimensions are: -8,-8,1382,744, is not contained completely on the desktop 0,0,1366,768. 
+UI actions on window needing mouse would not work in area not falling under the desktop
+[Warn - 17:47:47] 'TestStack.White.UIItems.UIItem' Window with title: OneNote: one place for all of your notes - OneNote whose dimensions are: -8,-8,1382,744, is not contained completely on the desktop 0,0,1366,768. 
+UI actions on window needing mouse would not work in area not falling under the desktop
+[Warn - 17:48:08] 'TestStack.White.UIItems.UIItem' Window with title: Test Automation is to realize ROI by automating re - OneNote whose dimensions are: -8,-8,1382,744, is not contained completely on the desktop 0,0,1366,768. 
+UI actions on window needing mouse would not work in area not falling under the desktop
+[Warn - 17:48:21] 'TestStack.White.UIItems.UIItem' Window with title: Framework Notes - OneNote whose dimensions are: -8,-8,1382,744, is not contained completely on the desktop 0,0,1366,768. 
+UI actions on window needing mouse would not work in area not falling under the desktop
+[Warn - 17:49:11] 'TestStack.White.Debug' Error happened while creating error report
+]]></output>
+              </test-case>
+              <test-case id="1-1001" name="WordSecurityTest" fullname="TestStack.White.UITests.Scenarios.WordTests.WordSecurityTest" methodname="WordSecurityTest" classname="TestStack.White.UITests.Scenarios.WordTests" runstate="Runnable" seed="570368615" result="Passed" start-time="2017-10-04 12:19:12Z" end-time="2017-10-04 12:20:37Z" duration="84.669269" asserts="1">
+                <output><![CDATA[[Warn - 17:49:13] 'TestStack.White.UIItems.UIItem' Window with title: Word whose dimensions are: -8,-8,1382,744, is not contained completely on the desktop 0,0,1366,768. 
+UI actions on window needing mouse would not work in area not falling under the desktop
+[Warn - 17:49:49] 'TestStack.White.UIItems.UIItem' Window with title: W1507119558402.38 - Word whose dimensions are: -8,-8,1382,744, is not contained completely on the desktop 0,0,1366,768. 
+UI actions on window needing mouse would not work in area not falling under the desktop
+[Warn - 17:50:01] 'TestStack.White.UIItems.UIItem' Window with title: W1507119558402.38 - Word whose dimensions are: -8,-8,1382,744, is not contained completely on the desktop 0,0,1366,768. 
+UI actions on window needing mouse would not work in area not falling under the desktop
+[Warn - 17:50:03] 'TestStack.White.UIItems.UIItem' Window with title: W1507119558402.38 - Word whose dimensions are: -8,-8,1382,744, is not contained completely on the desktop 0,0,1366,768. 
+UI actions on window needing mouse would not work in area not falling under the desktop
+[Warn - 17:50:35] 'TestStack.White.UIItems.UIItem' Window with title: W1507119558402.38 - Word whose dimensions are: -8,-8,1382,744, is not contained completely on the desktop 0,0,1366,768. 
+UI actions on window needing mouse would not work in area not falling under the desktop
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

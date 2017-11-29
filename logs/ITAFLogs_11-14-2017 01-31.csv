@@ -1,0 +1,8 @@
+Senario Name,Test Name,Browser Name,Os Name,Test Status,Test Data Row,Link to Screen Shot,Error Log,Test Type
+IFusionTest,loginApplication,firefox,WIN7,Fail,DR1,file://E:/HarmonyCoreiFusion/ScreenShots/IFusionTest_loginApplication_WIN7_firefox.png,"java.lang.AssertionError: Test case failed due to exception Failed to find value field Build info: version: '3.6.0'  revision: '6fbf3ec767'  time: '2017-09-27T15:28:36.4Z' System info: host: 'IM-LP-322'  ip: '192.168.238.100'  os.name: 'Windows 7'  os.arch: 'amd64'  os.version: '6.1'  java.version: '1.8.0_151' Driver info: org.openqa.selenium.firefox.FirefoxDriver Capabilities [{moz:profile=C:\Users\mbaragapu\AppData\Local\Temp\rust_mozprofile.SSuHV7x9kYsN  rotatable=false  timeouts={implicit=0  pageLoad=300000  script=30000}  pageLoadStrategy=normal  moz:headless=false  platform=XP  specificationLevel=0  moz:accessibilityChecks=false  acceptInsecureCerts=true  browserVersion=56.0.2  platformVersion=6.1  moz:processID=9192  browserName=firefox  javascriptEnabled=true  platformName=XP}] Session ID: 91fecfbe-4c41-4e41-9657-ec208cdf97ed *** Element info: {Using=id  value=email} expected [true] but found [false]",Smoke
+IFusionTest,updateSource,firefox,WIN7,Skipped,DR1,NA,"NA",Smoke
+IFusionTest,createSource,firefox,WIN7,Skipped,DR1,NA,"NA",Smoke
+IFusionTest,dsnSource,firefox,WIN7,Skipped,DR1,NA,"NA",Smoke
+IFusionTest,editDSN,firefox,WIN7,Skipped,DR1,NA,"NA",Smoke
+IFusionTest,editSource,firefox,WIN7,Skipped,DR1,NA,"NA",Smoke
+IFusionTest,logOutApplication,firefox,WIN7,Skipped,DR1,NA,"NA",Smoke

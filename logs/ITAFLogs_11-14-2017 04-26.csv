@@ -1,0 +1,8 @@
+Senario Name,Test Name,Browser Name,Os Name,Test Status,Test Data Row,Link to Screen Shot,Error Log,Test Type
+IFusionTest,loginApplication,chrome,WIN7,Skipped,NA,NA,"NA",Smoke
+IFusionTest,updateSource,chrome,WIN7,Skipped,NA,NA,"NA",Smoke
+IFusionTest,createSource,chrome,WIN7,Skipped,NA,NA,"NA",Smoke
+IFusionTest,dsnSource,chrome,WIN7,Skipped,NA,NA,"NA",Smoke
+IFusionTest,editDSN,chrome,WIN7,Skipped,NA,NA,"NA",Smoke
+IFusionTest,editSource,chrome,WIN7,Skipped,NA,NA,"NA",Smoke
+IFusionTest,logOutApplication,chrome,WIN7,Skipped,NA,NA,"NA",Smoke

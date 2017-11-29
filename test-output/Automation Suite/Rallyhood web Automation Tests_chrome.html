@@ -1,0 +1,1879 @@
+<html>
+<head>
+<title>TestNG:  Rallyhood web Automation Tests_chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Rallyhood web Automation Tests_chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>32/12/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 29 12:49:55 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>1843 seconds (1843739 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>Smoke </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_30()'><b>RallyhoodTC_30</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@1994590d, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-2102043560" onClick='toggleBox("Output-2102043560", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2102043560" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2102043560">
+TC Description : Verifying user is able to post comment for an event available and verify all options are working properly for ALL available Events<br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Cancel Button of Comments section of an Event - is enabled and Clicked<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Events #2 is present and Clickable<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]} expected [true] but found [false]
+	at com.web.tests.rallyhood.RHhomeChrome.Event_ATTENDING_Lable_Presence(RHhomeChrome.java:490)
+	at com.web.tests.rallyhood.RHhomeChrome.Multiple_Event_CommentsPostOptions_Validation(RHhomeChrome.java:1668)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_30(RallyhoodtestcasesChrome.java:388)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2102043560", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2102043560'><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.web.tests.rallyhood.RHhomeChrome.Event_ATTENDING_Lable_Presence(RHhomeChrome.java:490)
+	at com.web.tests.rallyhood.RHhomeChrome.Multiple_Event_CommentsPostOptions_Validation(RHhomeChrome.java:1668)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_30(RallyhoodtestcasesChrome.java:388)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>80</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_32()'><b>RallyhoodTC_32</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@11fdeb6e, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1669882110" onClick='toggleBox("Output-1669882110", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1669882110" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1669882110">
+TC Description : Verifying user is able to post comment for an event available and verify Author/Entered Comment/Entered Time of ALL available Events<br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+Author Value for Latest comment of Event - is displayed : Kiran Kumar<br/>
+Entered Text Value for Latest comment of Event - is displayed  Test Comment Automation<br/>
+When the latest comment was commented by user for an Event is present - is displayed: 2 minutes ago<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test case failed due to exception unknown error: Element &lt;a href=&quot;/embed/29594/events/1491358/social&quot; id=&quot;ember507&quot; class=&quot;event ember-view&quot;&gt;...&lt;/a&gt; is not clickable at point (711, 80). Other element would receive the click: &lt;img src=&quot;https://s3.amazonaws.com/rallyhood_production/public/system/rally_avatars/29606/large/staging_rally_29606_avatar.jpeg?1510242961&quot; alt=&quot;Swim Class&quot; class=&quot;avatar rux-ripple&quot;&gt;
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf expected [true] but found [false]
+	at com.web.tests.rallyhood.RHhomeChrome.Multiple_Event_AfterCommentPOST_VerifyCommentsValue(RHhomeChrome.java:1790)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_32(RallyhoodtestcasesChrome.java:406)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1669882110", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1669882110'><pre>java.lang.AssertionError: Test case failed due to exception unknown error: Element &lt;a href=&quot;/embed/29594/events/1491358/social&quot; id=&quot;ember507&quot; class=&quot;event ember-view&quot;&gt;...&lt;/a&gt; is not clickable at point (711, 80). Other element would receive the click: &lt;img src=&quot;https://s3.amazonaws.com/rallyhood_production/public/system/rally_avatars/29606/large/staging_rally_29606_avatar.jpeg?1510242961&quot; alt=&quot;Swim Class&quot; class=&quot;avatar rux-ripple&quot;&gt;
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.web.tests.rallyhood.RHhomeChrome.Multiple_Event_AfterCommentPOST_VerifyCommentsValue(RHhomeChrome.java:1790)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_32(RallyhoodtestcasesChrome.java:406)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>26</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_33()'><b>RallyhoodTC_33</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@33a98e8d, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1757729713" onClick='toggleBox("Output-1757729713", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1757729713" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1757729713">
+TC Description : Verifying user is able to post comment for an event available and verify Comment Screen all options when Attending 'Yes' is selected for an Events<br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'Yes' Button of Event is Clicked<br/>
+Calander icon of Event is displayed<br/>
+Change Button of Event when yes is clicked - is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+Author Value for Latest comment of Event - is displayed : Kiran Kumar<br/>
+Entered Text Value for Latest comment of Event - is displayed  Test Comment Automation<br/>
+When the latest comment was commented by user for an Event is present - is displayed: 2 minutes ago<br/>
+Change Button of Event when yes is clicked - is Enabled and Clicked<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]} expected [true] but found [false]
+	at com.web.tests.rallyhood.RHhomeChrome.Event_ATTENDING_Lable_Presence(RHhomeChrome.java:490)
+	at com.web.tests.rallyhood.RHhomeChrome.Single_Event_SelectionYES_VerifyComments_CommentedValues(RHhomeChrome.java:1832)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_33(RallyhoodtestcasesChrome.java:416)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1757729713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1757729713'><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.web.tests.rallyhood.RHhomeChrome.Event_ATTENDING_Lable_Presence(RHhomeChrome.java:490)
+	at com.web.tests.rallyhood.RHhomeChrome.Single_Event_SelectionYES_VerifyComments_CommentedValues(RHhomeChrome.java:1832)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_33(RallyhoodtestcasesChrome.java:416)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>72</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_34()'><b>RallyhoodTC_34</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@77ceb74e, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1854658495" onClick='toggleBox("Output-1854658495", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1854658495" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1854658495">
+TC Description : Verifying user is able to post comment for an event available and verify Comment Screen all options when Attending 'Yes' is selected for ALL available Events<br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]} expected [true] but found [false]
+	at com.web.tests.rallyhood.RHhomeChrome.Event_ATTENDING_Lable_Presence(RHhomeChrome.java:490)
+	at com.web.tests.rallyhood.RHhomeChrome.Multiple_Event_SelectionYES_VerifyComments_CommentedValues(RHhomeChrome.java:1858)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_34(RallyhoodtestcasesChrome.java:425)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1854658495", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1854658495'><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.web.tests.rallyhood.RHhomeChrome.Event_ATTENDING_Lable_Presence(RHhomeChrome.java:490)
+	at com.web.tests.rallyhood.RHhomeChrome.Multiple_Event_SelectionYES_VerifyComments_CommentedValues(RHhomeChrome.java:1858)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_34(RallyhoodtestcasesChrome.java:425)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>56</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_35()'><b>RallyhoodTC_35</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@1f572b95, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-851983156" onClick='toggleBox("Output-851983156", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-851983156" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-851983156">
+TC Description : Verifying user is able to post comment for an event available and verify Comment Screen all options when Attending 'NO' is selected for an Events<br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]} expected [true] but found [false]
+	at com.web.tests.rallyhood.RHhomeChrome.Event_ATTENDING_Lable_Presence(RHhomeChrome.java:490)
+	at com.web.tests.rallyhood.RHhomeChrome.Single_Event_SelectionNO_VerifyComments_CommentedValues(RHhomeChrome.java:1909)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_35(RallyhoodtestcasesChrome.java:434)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace851983156", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace851983156'><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.web.tests.rallyhood.RHhomeChrome.Event_ATTENDING_Lable_Presence(RHhomeChrome.java:490)
+	at com.web.tests.rallyhood.RHhomeChrome.Single_Event_SelectionNO_VerifyComments_CommentedValues(RHhomeChrome.java:1909)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_35(RallyhoodtestcasesChrome.java:434)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>53</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_36()'><b>RallyhoodTC_36</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@3278bf74, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1157370450" onClick='toggleBox("Output-1157370450", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1157370450" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1157370450">
+TC Description : Verifying user is able to post comment for an event available and verify Comment Screen all options when Attending 'NO' is selected for ALL available Events<br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]} expected [true] but found [false]
+	at com.web.tests.rallyhood.RHhomeChrome.Event_ATTENDING_Lable_Presence(RHhomeChrome.java:490)
+	at com.web.tests.rallyhood.RHhomeChrome.Multiple_Event_SelectionNO_VerifyComments_CommentedValues(RHhomeChrome.java:1961)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_36(RallyhoodtestcasesChrome.java:443)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1157370450", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1157370450'><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.web.tests.rallyhood.RHhomeChrome.Event_ATTENDING_Lable_Presence(RHhomeChrome.java:490)
+	at com.web.tests.rallyhood.RHhomeChrome.Multiple_Event_SelectionNO_VerifyComments_CommentedValues(RHhomeChrome.java:1961)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_36(RallyhoodtestcasesChrome.java:443)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>54</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_37()'><b>RallyhoodTC_37</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@5f0f2a2f, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1339288021" onClick='toggleBox("Output-1339288021", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1339288021" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1339288021">
+TC Description : Verifying user is able to land on same page after refreshing the page, after clicking 'Yes' to attend for All available Events<br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]} expected [true] but found [false]
+	at com.web.tests.rallyhood.RHhomeChrome.Event_ATTENDING_Lable_Presence(RHhomeChrome.java:490)
+	at com.web.tests.rallyhood.RHhomeChrome.Multiple_Event_Screen_AttendingEvent_PageRefresh_LandingSamePage(RHhomeChrome.java:2065)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_37(RallyhoodtestcasesChrome.java:453)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1339288021", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1339288021'><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.web.tests.rallyhood.RHhomeChrome.Event_ATTENDING_Lable_Presence(RHhomeChrome.java:490)
+	at com.web.tests.rallyhood.RHhomeChrome.Multiple_Event_Screen_AttendingEvent_PageRefresh_LandingSamePage(RHhomeChrome.java:2065)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_37(RallyhoodtestcasesChrome.java:453)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>54</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_38()'><b>RallyhoodTC_38</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@653c43de, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-787762695" onClick='toggleBox("Output-787762695", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-787762695" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-787762695">
+TC Description : 'Read More' link to view full content of an Event is enabled and Clicked for all available Events <br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]} expected [true] but found [false]
+	at com.web.tests.rallyhood.RHhomeChrome.Multiple_EventsScreen_ReadMore_Validation(RHhomeChrome.java:2162)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_38(RallyhoodtestcasesChrome.java:462)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace787762695", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace787762695'><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//article[@class=&apos;participation ember-view none&apos;]//div[@class=&apos;rsvp is-none&apos;]//span[@class=&apos;prompt&apos;]} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.web.tests.rallyhood.RHhomeChrome.Multiple_EventsScreen_ReadMore_Validation(RHhomeChrome.java:2162)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_38(RallyhoodtestcasesChrome.java:462)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>44</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_40()'><b>RallyhoodTC_40</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@4793e8de, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1564687681" onClick='toggleBox("Output-1564687681", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1564687681" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1564687681">
+TC Description : Verify Functionality of 'Read More...' for ALL available Groups and Classes is working properly <br/>
+Rallyhood Total Groups Present is:: 3<br/>
+Group Follow Button is Enabled and Displayed<br/>
+'Read More' link to view full content of an Group is displayed<br/>
+'Read More' link to view full content of a Group is enabled and Clicked<br/>
+Group Follow Button is Enabled and Displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Group Follow Button is Enabled and Displayed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;description ember-view truncated&apos;]//span[@class=&apos;ellipsis&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//div[@class=&apos;description ember-view truncated&apos;]//span[@class=&apos;ellipsis&apos;]} expected [true] but found [false]
+	at com.web.tests.rallyhood.RHhomeChrome.Group_ReadMore_Expand_Presence(RHhomeChrome.java:662)
+	at com.web.tests.rallyhood.RHhomeChrome.RallyHood_Multiple_GroupClasses_ReadMoreExpand_Verify(RHhomeChrome.java:2279)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_40(RallyhoodtestcasesChrome.java:484)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1564687681", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1564687681'><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;description ember-view truncated&apos;]//span[@class=&apos;ellipsis&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//div[@class=&apos;description ember-view truncated&apos;]//span[@class=&apos;ellipsis&apos;]} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.web.tests.rallyhood.RHhomeChrome.Group_ReadMore_Expand_Presence(RHhomeChrome.java:662)
+	at com.web.tests.rallyhood.RHhomeChrome.RallyHood_Multiple_GroupClasses_ReadMoreExpand_Verify(RHhomeChrome.java:2279)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_40(RallyhoodtestcasesChrome.java:484)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>46</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_42()'><b>RallyhoodTC_42</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@151c2b73, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1467105321" onClick='toggleBox("Output-1467105321", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1467105321" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1467105321">
+TC Description : Verify Instructor Name, Date and Time for Classes in a Group<br/>
+Rallyhood Total Groups Present is:: 3<br/>
+Rallyhood Total Classes Present in a Group:: 5<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Another Important Event<br/>
+In a Groups, for a Class Date is displayed: Dec 1st<br/>
+In a Groups, for a Class Time is displayed: 5:30 AM<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Groups, for a Class Date is displayed: Dec 3rd<br/>
+In a Groups, for a Class Time is displayed: 1:30 AM<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Groups, for a Class Date is displayed: Dec 10th<br/>
+In a Groups, for a Class Time is displayed: 1:30 AM<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Groups, for a Class Date is displayed: Dec 17th<br/>
+In a Groups, for a Class Time is displayed: 1:30 AM<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Groups, for a Class Date is displayed: Dec 24th<br/>
+In a Groups, for a Class Time is displayed: 1:30 AM<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Total Classes Present in a Group:: 1<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: After Work Bike Party<br/>
+In a Groups, for a Class Date is displayed: Dec 1st<br/>
+In a Groups, for a Class Time is displayed: 2:00 PM<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Total Classes Present in a Group:: 3<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Running in Circles<br/>
+In a Groups, for a Class Date is displayed: Nov 29th<br/>
+In a Groups, for a Class Time is displayed: 1:30 AM<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Running in Circles<br/>
+In a Groups, for a Class Date is displayed: Dec 13th<br/>
+In a Groups, for a Class Time is displayed: 1:30 AM<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Running in Circles<br/>
+In a Groups, for a Class Date is displayed: Dec 27th<br/>
+In a Groups, for a Class Time is displayed: 1:30 AM<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Total Groups Present is:: 3<br/>
+Rallyhood Total Classes Present in a Group:: 5<br/>
+In a Groups, for a Class- After SignUp Instructor Name is displayed: Another Important Event<br/>
+In a Group, for a Class, for an Instructor Remove Button is Enabled and Displayed<br/>
+Remove Button in a Group, for an instructor in a class is enabled and Clicked<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@class=&apos;time-slots&apos;]//article[@class=&apos;time-slot ember-view none&apos;]//div[@class=&apos;title&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//section[@class=&apos;time-slots&apos;]//article[@class=&apos;time-slot ember-view none&apos;]//div[@class=&apos;title&apos;]} expected [true] but found [false]
+	at com.web.tests.rallyhood.RHhomeChrome.Group_Class_InstructorName_BeforeSignUp_Presence(RHhomeChrome.java:748)
+	at com.web.tests.rallyhood.RHhomeChrome.RallyHood_Multiple_GroupClasses_InstructorSignUp_Remove_Verify(RHhomeChrome.java:2426)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_42(RallyhoodtestcasesChrome.java:508)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1467105321", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1467105321'><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@class=&apos;time-slots&apos;]//article[@class=&apos;time-slot ember-view none&apos;]//div[@class=&apos;title&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//section[@class=&apos;time-slots&apos;]//article[@class=&apos;time-slot ember-view none&apos;]//div[@class=&apos;title&apos;]} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.web.tests.rallyhood.RHhomeChrome.Group_Class_InstructorName_BeforeSignUp_Presence(RHhomeChrome.java:748)
+	at com.web.tests.rallyhood.RHhomeChrome.RallyHood_Multiple_GroupClasses_InstructorSignUp_Remove_Verify(RHhomeChrome.java:2426)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_42(RallyhoodtestcasesChrome.java:508)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>99</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_43()'><b>RallyhoodTC_43</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@5b1bc5db, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-2122523018" onClick='toggleBox("Output-2122523018", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2122523018" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2122523018">
+TC Description : Verify Remove Enrolled Instructor functionality in All Classes  all Groups<br/>
+Rallyhood Total Groups Present is:: 3<br/>
+Rallyhood Total Classes Present in a Group:: 2<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Another Important Event<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//article[@class=&apos;time-slot ember-view none&apos;]//div[@class=&apos;info&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//article[@class=&apos;time-slot ember-view none&apos;]//div[@class=&apos;info&apos;]} expected [true] but found [false]
+	at com.web.tests.rallyhood.RHhomeChrome.RallyHood_Multiple_GroupClasses_Instructor_RemoveButton_Verify(RHhomeChrome.java:2617)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_43(RallyhoodtestcasesChrome.java:519)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2122523018", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2122523018'><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//article[@class=&apos;time-slot ember-view none&apos;]//div[@class=&apos;info&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//article[@class=&apos;time-slot ember-view none&apos;]//div[@class=&apos;info&apos;]} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.web.tests.rallyhood.RHhomeChrome.RallyHood_Multiple_GroupClasses_Instructor_RemoveButton_Verify(RHhomeChrome.java:2617)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_43(RallyhoodtestcasesChrome.java:519)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>59</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_45()'><b>RallyhoodTC_45</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@77ab3ff, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-524668182" onClick='toggleBox("Output-524668182", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-524668182" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-524668182">
+TC Description : Verify past dated classes are not listed in the Classes for all Groups<br/>
+Rallyhood Total Groups Present is:: 3<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//article[@class=&apos;time-slot ember-view none&apos;]//div[@class=&apos;info&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//article[@class=&apos;time-slot ember-view none&apos;]//div[@class=&apos;info&apos;]} expected [true] but found [false]
+	at com.web.tests.rallyhood.RHhomeChrome.Group_Current_UpcomingClass_BeforeSignUp_Presence(RHhomeChrome.java:711)
+	at com.web.tests.rallyhood.RHhomeChrome.RallyHood_Multiple_GroupClasses_ClassesDate_GreaterThanCurrentDate_Verify(RHhomeChrome.java:2685)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_45(RallyhoodtestcasesChrome.java:541)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace524668182", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace524668182'><pre>java.lang.AssertionError: Test case failed due to exception no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//article[@class=&apos;time-slot ember-view none&apos;]//div[@class=&apos;info&apos;]&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-322&apos;, ip: &apos;192.168.205.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\MBARAG~1\AppData\Local\Temp\scoped_dir2504_14824}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ba1a105d2a296cfbf4a98faa99342bf
+*** Element info: {Using=xpath, value=//article[@class=&apos;time-slot ember-view none&apos;]//div[@class=&apos;info&apos;]} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.web.tests.rallyhood.RHhomeChrome.Group_Current_UpcomingClass_BeforeSignUp_Presence(RHhomeChrome.java:711)
+	at com.web.tests.rallyhood.RHhomeChrome.RallyHood_Multiple_GroupClasses_ClassesDate_GreaterThanCurrentDate_Verify(RHhomeChrome.java:2685)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_45(RallyhoodtestcasesChrome.java:541)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>43</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_01()'><b>RallyhoodTC_01</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@144b430a, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1892255684" onClick='toggleBox("Output-1892255684", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1892255684" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1892255684">
+TC Description : Verify Rallyhood Home screen is displayed and Events/Groups and Classes sections are present<br/>
+Rallyhood home scree have Event header<br/>
+Rallyhood home scree have Groups and Classes header<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_02()'><b>RallyhoodTC_02</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@31619f96, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1334057892" onClick='toggleBox("Output-1334057892", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1334057892" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1334057892">
+TC Description : Verify error message on browser saying app_uid is invalid. <br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_03()'><b>RallyhoodTC_03</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@170729a1, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1966533932" onClick='toggleBox("Output-1966533932", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1966533932" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1966533932">
+TC Description : Verify error message on browser saying app_uid is invalid. <br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_05()'><b>RallyhoodTC_05</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@7256a506, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-129871628" onClick='toggleBox("Output-129871628", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-129871628" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-129871628">
+TC Description : Verify single Events/Groups and Classes are present and clickable <br/>
+Rallyhood home scree have Event header<br/>
+Rallyhood home scree have Groups and Classes header<br/>
+Rallyhood home scree have Events Listed and Clickable<br/>
+Rallyhood home scree have Groups and Classes Listed and Clickable<br/>
+</div>
+</td>
+<td></td>
+<td>42</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_06()'><b>RallyhoodTC_06</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@33c8591b, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-116922940" onClick='toggleBox("Output-116922940", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-116922940" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-116922940">
+TC Description : Verify presence of Event Name, Event Date and respective Event Image for single Event Present<br/>
+Rallyhood Event Date for Event isOctober
+31
+Tuesday<br/>
+Rallyhood Event Name for Event is : An Important Event<br/>
+Rallyhood Event Image for Event is present <br/>
+******************************************************<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_07()'><b>RallyhoodTC_07</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@10c1b7a3, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1497259681" onClick='toggleBox("Output-1497259681", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1497259681" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1497259681">
+TC Description : Verify presence of Lable 'Attending?', Button 'Yes' and Button 'No' present in an Event <br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_08()'><b>RallyhoodTC_08</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@4c51640c, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1286270260" onClick='toggleBox("Output-1286270260", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1286270260" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1286270260">
+TC Description : Verify Event Flow when user clicks on Yes button for attending event and ability to change his selection again for single Event<br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'Yes' Button of Event is Clicked<br/>
+Calander icon of Event is displayed<br/>
+Change Button of Event when yes is clicked - is displayed and enabled<br/>
+Change Button of Event when yes is clicked - is Enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+</div>
+</td>
+<td></td>
+<td>43</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_09()'><b>RallyhoodTC_09</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@12fd29d4, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-611985703" onClick='toggleBox("Output-611985703", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-611985703" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-611985703">
+TC Description : Verify Event Flow when user clicks on 'NO' button for NOT attending the event and ability to change his selection again for single Event<br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is Clicked<br/>
+Lable Not Attending of Event is displayed<br/>
+Change Button of Event when NO is clicked - is displayed and enabled<br/>
+Change Button of Event when NO is clicked - is enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_10()'><b>RallyhoodTC_10</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@4f921acd, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-2016755787" onClick='toggleBox("Output-2016755787", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2016755787" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2016755787">
+TC Description : Verify ability to post comment without selecting 'Yes'/'No' button in an Event<br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_11()'><b>RallyhoodTC_11</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@5161b1f0, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-548822212" onClick='toggleBox("Output-548822212", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-548822212" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-548822212">
+TC Description : Verifying user is able to post comment for an event available and verify all options are working properly for an Event<br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Cancel Button of Comments section of an Event - is enabled and Clicked<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_12()'><b>RallyhoodTC_12</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@4439585f, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1921143864" onClick='toggleBox("Output-1921143864", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1921143864" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1921143864">
+TC Description : 'Read More' link to view full content of an Event is enabled and Clicked in an Event <br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'Read More' link to view full content of an Event is displayed<br/>
+'Read More' link to view full content of an Event is enabled and Clicked<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_13()'><b>RallyhoodTC_13</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@5adc5ea9, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1138995052" onClick='toggleBox("Output-1138995052", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1138995052" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1138995052">
+TC Description : Verifying user is able to land on same page after refreshing the page, after clicking 'Yes' to attend an Events<br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'Yes' Button of Event is Clicked<br/>
+Calander icon of Event is displayed<br/>
+Change Button of Event when yes is clicked - is displayed and enabled<br/>
+After Refresh of the Page, landed to the same page<br/>
+Change Button of Event when yes is clicked - is Enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+</div>
+</td>
+<td></td>
+<td>59</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_14()'><b>RallyhoodTC_14</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@7f33262f, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-386984335" onClick='toggleBox("Output-386984335", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-386984335" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-386984335">
+TC Description : Verify presence of Group Name, Members count and respective Event Image for single Group Present <br/>
+Rallyhood Group name for Group is : Swim Class<br/>
+Rallyhood Group Members count of Group is : Swim Class<br/>
+Rallyhood Group Image for Group  is present <br/>
+******************************************************<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_15()'><b>RallyhoodTC_15</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@29ce2e2c, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1526438096" onClick='toggleBox("Output-1526438096", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1526438096" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1526438096">
+TC Description : Verify Functionality of Follow button for Class in a Group is working properly <br/>
+Rallyhood home scree have Groups and Classes Listed, First Listed Class in a Group is Clickable and performed Click Operation<br/>
+Group Follow Button is Enabled and Displayed<br/>
+Follow Button in a Group - is enabled and Clicked<br/>
+Group UnFollow Button is Enabled and Displayed<br/>
+Calander icon of Group when Followed is displayed<br/>
+Unfollow Button in a Group - is enabled and Clicked<br/>
+Group Follow Button is Enabled and Displayed<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_16()'><b>RallyhoodTC_16</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@229fbc7a, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-568526644" onClick='toggleBox("Output-568526644", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-568526644" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-568526644">
+TC Description : Verify Functionality of 'Read More ..' for Groups and Classes is working properly <br/>
+Rallyhood home scree have Groups and Classes Listed, First Listed Class in a Group is Clickable and performed Click Operation<br/>
+Group Follow Button is Enabled and Displayed<br/>
+'Read More' link to view full content of an Group is displayed<br/>
+'Read More' link to view full content of a Group is enabled and Clicked<br/>
+Group Follow Button is Enabled and Displayed<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_17()'><b>RallyhoodTC_17</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@2be9bc55, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1275680117" onClick='toggleBox("Output-1275680117", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1275680117" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1275680117">
+TC Description : Verify Functionality of SignUp Process by a user for Classes in a Group for an instructor<br/>
+Rallyhood home scree have Groups and Classes Listed, First Listed Class in a Group is Clickable and performed Click Operation<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Another Important Event<br/>
+In a Group, for a class, before signUp - Instructor name - is enabled and Clicked<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+In a Groups, for a Class- After SignUp Instructor Name is displayed: Another Important Event<br/>
+In a Group, for a class, after signUp - Instructor name - is enabled and Clicked<br/>
+In a Group, for a Class, for an Instructor Remove Button is Enabled and Displayed<br/>
+Remove Button in a Group, for an instructor in a class is enabled and Clicked<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_18()'><b>RallyhoodTC_18</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@6890b462, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-123758737" onClick='toggleBox("Output-123758737", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-123758737" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-123758737">
+TC Description : Verify Instructor Name, Date and Time for Classes in a Group<br/>
+Rallyhood home scree have Groups and Classes Listed, First Listed Class in a Group is Clickable and performed Click Operation<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Another Important Event<br/>
+In a Groups, for a Class- Instructor Name is displayed: Another Important Event<br/>
+In a Groups, for a Class Date is displayed: Dec 1st<br/>
+In a Groups, for a Class Time is displayed: 5:30 AM<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_19()'><b>RallyhoodTC_19</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@53736265, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1679647357" onClick='toggleBox("Output-1679647357", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1679647357" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1679647357">
+TC Description : Verify past dated classes are not listed in the classes<br/>
+RallyHood Login URL<br/>
+........Rallyhood Login Application........<br/>
+Rallyhood home scree have Groups and Classes Listed, First Listed Class in a Group is Clickable and performed Click Operation<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Another Important Event<br/>
+In a Groups, for a Class- Instructor Name is displayed: Another Important Event<br/>
+In a Groups, for a Class Date is displayed: Dec 1st<br/>
+The very next upcoming instructors class date : 1-Dec-17 is greater than the current date: 29-Nov-17<br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_20()'><b>RallyhoodTC_20</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@13ddd44b, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1539068944" onClick='toggleBox("Output-1539068944", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1539068944" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1539068944">
+TC Description : Verify Remove Enrolled Instructor functionality in Classes of a Group<br/>
+Rallyhood home scree have Groups and Classes Listed, First Listed Class in a Group is Clickable and performed Click Operation<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Another Important Event<br/>
+In a Group, for a class, before signUp - Instructor name - is enabled and Clicked<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+In a Groups, for a Class- After SignUp Instructor Name is displayed: Another Important Event<br/>
+In a Group, for a class, after signUp - Instructor name - is enabled and Clicked<br/>
+In a Group, for a Class, for an Instructor Remove Button is Enabled and Displayed<br/>
+Remove Button in a Group, for an instructor in a class is enabled and Clicked<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_21()'><b>RallyhoodTC_21</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@71812c1e, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-834119718" onClick='toggleBox("Output-834119718", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-834119718" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-834119718">
+TC Description : Verify Functionality of UnFollow Option for Class in a Group is working properly <br/>
+Rallyhood home scree have Groups and Classes Listed, First Listed Class in a Group is Clickable and performed Click Operation<br/>
+Group Follow Button is Enabled and Displayed<br/>
+Follow Button in a Group - is enabled and Clicked<br/>
+Group UnFollow Button is Enabled and Displayed<br/>
+Calander icon of Group when Followed is displayed<br/>
+Unfollow Button in a Group - is enabled and Clicked<br/>
+Group Follow Button is Enabled and Displayed<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_22()'><b>RallyhoodTC_22</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@5d6791a9, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-852544299" onClick='toggleBox("Output-852544299", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-852544299" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-852544299">
+TC Description : Verify All Events are present and clickable <br/>
+Rallyhood home scree have Event header<br/>
+Rallyhood home scree have Groups and Classes header<br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+Rallyhood Events #2 is present and Clickable<br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_23()'><b>RallyhoodTC_23</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@491bfc3e, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1655519382" onClick='toggleBox("Output-1655519382", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1655519382" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1655519382">
+TC Description : Verify All Groups are present and clickable <br/>
+Rallyhood home scree have Event header<br/>
+Rallyhood home scree have Groups and Classes header<br/>
+Rallyhood Total Groups Present is:: 3<br/>
+Rallyhood Groups #1 is present and Clickable<br/>
+Rallyhood Groups #2 is present and Clickable<br/>
+Rallyhood Groups #3 is present and Clickable<br/>
+</div>
+</td>
+<td></td>
+<td>64</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_24()'><b>RallyhoodTC_24</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@257dd2ae, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1102405386" onClick='toggleBox("Output-1102405386", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1102405386" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1102405386">
+TC Description : Verify presence of Event Name, Event Date and respective Event Image for All Events Present <br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Event Date for Event #1 is : October
+31
+Tuesday<br/>
+Rallyhood Event Name for Event #1 is : An Important Event<br/>
+Rallyhood Event Image for Event #1 is present <br/>
+******************************************************<br/>
+Rallyhood Event Date for Event #2 is : December
+1
+Friday<br/>
+Rallyhood Event Name for Event #2 is : Another Important Event<br/>
+Rallyhood Event Image for Event #2 is present <br/>
+******************************************************<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_25()'><b>RallyhoodTC_25</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@50acc094, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-2029622873" onClick='toggleBox("Output-2029622873", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2029622873" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2029622873">
+TC Description : Verify presence of Group Name, Members count and respective Event Image for All Groups Present <br/>
+Rallyhood Total Groups Present is:: 3<br/>
+Rallyhood Group name for Group #1 is : Swim Class<br/>
+Rallyhood Group Members count of Group #1 is : 7
+Members<br/>
+Rallyhood Group Image for Group #1 is present <br/>
+******************************************************<br/>
+Rallyhood Group name for Group #2 is : Bicycle Club<br/>
+Rallyhood Group Members count of Group #2 is : 1
+Members<br/>
+Rallyhood Group Image for Group #2 is present <br/>
+******************************************************<br/>
+Rallyhood Group name for Group #3 is : Running Club<br/>
+Rallyhood Group Members count of Group #3 is : 1
+Members<br/>
+Rallyhood Group Image for Group #3 is present <br/>
+******************************************************<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_26()'><b>RallyhoodTC_26</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@16edde5, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1330729717" onClick='toggleBox("Output-1330729717", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1330729717" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1330729717">
+TC Description : Verify presence of Lable 'Attending?', Button 'Yes' and Button 'No' present in All Existing Event <br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+Rallyhood Events #1 verified for the lable and buttons on the screen<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+- - - - - - - - - - - - - - - - - - - - -    - - - - - - - - - - - - - - - -<br/>
+Rallyhood Events #2 is present and Clickable<br/>
+Rallyhood Events #2 verified for the lable and buttons on the screen<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+- - - - - - - - - - - - - - - - - - - - -    - - - - - - - - - - - - - - - -<br/>
+</div>
+</td>
+<td></td>
+<td>57</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_27()'><b>RallyhoodTC_27</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@b5e6c0c, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-452575765" onClick='toggleBox("Output-452575765", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-452575765" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-452575765">
+TC Description : Verify Event Flow when user clicks on Yes button for attending event and ability to change his selection again for All Events Available<br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'Yes' Button of Event is Clicked<br/>
+Calander icon of Event is displayed<br/>
+Change Button of Event when yes is clicked - is displayed and enabled<br/>
+Change Button of Event when yes is clicked - is Enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Events #2 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'Yes' Button of Event is Clicked<br/>
+Calander icon of Event is displayed<br/>
+Change Button of Event when yes is clicked - is displayed and enabled<br/>
+Change Button of Event when yes is clicked - is Enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td></td>
+<td>84</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_28()'><b>RallyhoodTC_28</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@16688788, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-148879722" onClick='toggleBox("Output-148879722", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-148879722" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-148879722">
+TC Description : Verify Event Flow when user clicks on 'NO' button for NOT attending the event and ability to change his selection again for ALL Events Available<br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is Clicked<br/>
+Lable Not Attending of Event is displayed<br/>
+Change Button of Event when NO is clicked - is displayed and enabled<br/>
+Change Button of Event when NO is clicked - is enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Events #2 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is Clicked<br/>
+Lable Not Attending of Event is displayed<br/>
+Change Button of Event when NO is clicked - is displayed and enabled<br/>
+Change Button of Event when NO is clicked - is enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td></td>
+<td>85</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_29()'><b>RallyhoodTC_29</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@5bd6718c, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-416816461" onClick='toggleBox("Output-416816461", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-416816461" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-416816461">
+TC Description : Verify ability to post comment without selecting 'Yes'/'No' button in ALL available Events<br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Events #2 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td></td>
+<td>72</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_31()'><b>RallyhoodTC_31</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@18864214, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1745956942" onClick='toggleBox("Output-1745956942", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1745956942" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1745956942">
+TC Description : Verifying user is able to post comment for an event available and verify Author/Entered Comment/Entered Time of an Events<br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+Author Value for Latest comment of Event - is displayed : Kiran Kumar<br/>
+Entered Text Value for Latest comment of Event - is displayed  Test Comment Automation<br/>
+When the latest comment was commented by user for an Event is present - is displayed: 2 minutes ago<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_39()'><b>RallyhoodTC_39</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@6ee001d0, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-367900494" onClick='toggleBox("Output-367900494", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-367900494" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-367900494">
+TC Description : Verify Functionality of Follow button for ALL Class in a Group is working properly <br/>
+Rallyhood Total Groups Present is:: 3<br/>
+Group Follow Button is Enabled and Displayed<br/>
+Follow Button in a Group - is enabled and Clicked<br/>
+Group UnFollow Button is Enabled and Displayed<br/>
+Calander icon of Group when Followed is displayed<br/>
+Unfollow Button in a Group - is enabled and Clicked<br/>
+Group Follow Button is Enabled and Displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Group Follow Button is Enabled and Displayed<br/>
+Follow Button in a Group - is enabled and Clicked<br/>
+Group UnFollow Button is Enabled and Displayed<br/>
+Calander icon of Group when Followed is displayed<br/>
+Unfollow Button in a Group - is enabled and Clicked<br/>
+Group Follow Button is Enabled and Displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Group Follow Button is Enabled and Displayed<br/>
+Follow Button in a Group - is enabled and Clicked<br/>
+Group UnFollow Button is Enabled and Displayed<br/>
+Calander icon of Group when Followed is displayed<br/>
+Unfollow Button in a Group - is enabled and Clicked<br/>
+Group Follow Button is Enabled and Displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_41()'><b>RallyhoodTC_41</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@16970f27, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-1176628509" onClick='toggleBox("Output-1176628509", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1176628509" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1176628509">
+TC Description : Verify Functionality of SignUp Process by a user for Classes in a Group for an instructor for all available groups and classes<br/>
+Rallyhood Total Groups Present is:: 3<br/>
+Rallyhood Total Classes Present in a Group:: 5<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Another Important Event<br/>
+In a Groups, for a Class Date is displayed: Dec 1st<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Groups, for a Class Date is displayed: Dec 3rd<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Groups, for a Class Date is displayed: Dec 10th<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Groups, for a Class Date is displayed: Dec 17th<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Groups, for a Class Date is displayed: Dec 24th<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Total Classes Present in a Group:: 1<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: After Work Bike Party<br/>
+In a Groups, for a Class Date is displayed: Dec 1st<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Total Classes Present in a Group:: 3<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Running in Circles<br/>
+In a Groups, for a Class Date is displayed: Nov 29th<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Running in Circles<br/>
+In a Groups, for a Class Date is displayed: Dec 13th<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Running in Circles<br/>
+In a Groups, for a Class Date is displayed: Dec 27th<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Total Groups Present is:: 3<br/>
+Rallyhood Total Classes Present in a Group:: 5<br/>
+In a Groups, for a Class- After SignUp Instructor Name is displayed: Another Important Event<br/>
+In a Group, for a Class, for an Instructor Remove Button is Enabled and Displayed<br/>
+Remove Button in a Group, for an instructor in a class is enabled and Clicked<br/>
+In a Groups, for a Class- Instructor Name is displayed: Another Important Event<br/>
+In a Groups, for a Class- After SignUp Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Group, for a Class, for an Instructor Remove Button is Enabled and Displayed<br/>
+Remove Button in a Group, for an instructor in a class is enabled and Clicked<br/>
+In a Groups, for a Class- Instructor Name is displayed: Another Important Event<br/>
+In a Groups, for a Class- After SignUp Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Group, for a Class, for an Instructor Remove Button is Enabled and Displayed<br/>
+Remove Button in a Group, for an instructor in a class is enabled and Clicked<br/>
+In a Groups, for a Class- Instructor Name is displayed: Another Important Event<br/>
+In a Groups, for a Class- After SignUp Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Group, for a Class, for an Instructor Remove Button is Enabled and Displayed<br/>
+Remove Button in a Group, for an instructor in a class is enabled and Clicked<br/>
+In a Groups, for a Class- Instructor Name is displayed: Another Important Event<br/>
+In a Groups, for a Class- After SignUp Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Group, for a Class, for an Instructor Remove Button is Enabled and Displayed<br/>
+Remove Button in a Group, for an instructor in a class is enabled and Clicked<br/>
+In a Groups, for a Class- Instructor Name is displayed: Another Important Event<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Total Classes Present in a Group:: 1<br/>
+In a Groups, for a Class- After SignUp Instructor Name is displayed: After Work Bike Party<br/>
+In a Group, for a Class, for an Instructor Remove Button is Enabled and Displayed<br/>
+Remove Button in a Group, for an instructor in a class is enabled and Clicked<br/>
+In a Groups, for a Class- Instructor Name is displayed: After Work Bike Party<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Total Classes Present in a Group:: 3<br/>
+In a Groups, for a Class- After SignUp Instructor Name is displayed: Running in Circles<br/>
+In a Group, for a Class, for an Instructor Remove Button is Enabled and Displayed<br/>
+Remove Button in a Group, for an instructor in a class is enabled and Clicked<br/>
+In a Groups, for a Class- Instructor Name is displayed: Running in Circles<br/>
+In a Groups, for a Class- After SignUp Instructor Name is displayed: Running in Circles<br/>
+In a Group, for a Class, for an Instructor Remove Button is Enabled and Displayed<br/>
+Remove Button in a Group, for an instructor in a class is enabled and Clicked<br/>
+In a Groups, for a Class- Instructor Name is displayed: Running in Circles<br/>
+In a Groups, for a Class- After SignUp Instructor Name is displayed: Running in Circles<br/>
+In a Group, for a Class, for an Instructor Remove Button is Enabled and Displayed<br/>
+Remove Button in a Group, for an instructor in a class is enabled and Clicked<br/>
+In a Groups, for a Class- Instructor Name is displayed: Running in Circles<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td></td>
+<td>104</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RallyhoodTC_44()'><b>RallyhoodTC_44</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome<br>Parameters: com.web.tests.rallyhood.RHhomeDP@6fb62663, org.testng.TestRunner@21a5972c<br/>
+<a href="#Output-913262348" onClick='toggleBox("Output-913262348", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-913262348" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-913262348">
+TC Description : Verify Functionality of Unfollow Option for ALL Class in a Group is working properly <br/>
+Rallyhood Total Groups Present is:: 3<br/>
+Group Follow Button is Enabled and Displayed<br/>
+Follow Button in a Group - is enabled and Clicked<br/>
+Group UnFollow Button is Enabled and Displayed<br/>
+Calander icon of Group when Followed is displayed<br/>
+Unfollow Button in a Group - is enabled and Clicked<br/>
+Group Follow Button is Enabled and Displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Group Follow Button is Enabled and Displayed<br/>
+Follow Button in a Group - is enabled and Clicked<br/>
+Group UnFollow Button is Enabled and Displayed<br/>
+Calander icon of Group when Followed is displayed<br/>
+Unfollow Button in a Group - is enabled and Clicked<br/>
+Group Follow Button is Enabled and Displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Group Follow Button is Enabled and Displayed<br/>
+Follow Button in a Group - is enabled and Clicked<br/>
+Group UnFollow Button is Enabled and Displayed<br/>
+Calander icon of Group when Followed is displayed<br/>
+Unfollow Button in a Group - is enabled and Clicked<br/>
+Group Follow Button is Enabled and Displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome@3ef089ce</td></tr>
+</table><p>
+</body>
+</html>

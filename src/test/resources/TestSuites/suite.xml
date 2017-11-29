@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite" thread-count="10" parallel="tests">
+	<groups>
+		<run>
+			<include name="Smoke" />
+		</run>
+	</groups>
+ 
+	<listeners>
+		<listener class-name="com.innominds.team.listeners.TestReportListner" />
+	</listeners>
+
+
+	
+	
+	<test name="Rallyhood web Automation Tests_firefox" enabled="true">
+		<!-- browser value as firefox or chrome or API -->
+		<parameter name="browser" value="firefox" />
+		<parameter name="os" value="WIN7" />
+		<classes>
+			<class name="com.web.tests.webtestcases.rallyhood.Rallyhoodtestcases" />
+		</classes>
+	</test>
+	
+	
+	<test name="Rallyhood web Automation Tests_chrome" enabled="true">
+		<!-- browser value as firefox or chrome or API -->
+		<parameter name="browser" value="chrome" />
+		<parameter name="os" value="WIN7" />
+		<classes>
+			<class name="com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome" />
+		</classes>
+	</test>
+
+	
+</suite> 

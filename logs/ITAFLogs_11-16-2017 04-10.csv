@@ -1,0 +1,3 @@
+Senario Name,Test Name,Browser Name,Os Name,Test Status,Test Data Row,Link to Screen Shot,Error Log,Test Type
+Rallyhoodtestcases,RallyhoodTC_01,firefox,WIN10,Pass,RH1,NA,"NA",Smoke
+Rallyhoodtestcases,RallyhoodTC_05,firefox,WIN10,Fail,RH1,file://E:/HarmonyCoreiFusion/ScreenShots/Rallyhoodtestcases_RallyhoodTC_05_WIN10_firefox.png,"java.lang.AssertionError: Events are displayed on the screen expected [true] but found [false]",Smoke

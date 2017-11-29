@@ -1,0 +1,19 @@
+Senario Name,Test Name,Browser Name,Os Name,Test Status,Test Data Row,Link to Screen Shot,Error Log,Test Type
+RestApiTests,dsnDataWithAPIGet,API,WIN10,Pass, ,NA,"NA",Smoke
+RestApiTests,dsnDataWithAPIGet,API,WIN10,Fail,NA,file://E:/HarmonyCoreiFusion/ScreenShots/HealthCheck_IPTraceAndValiadte_null_null.png,"IOError: (2  'File not found - D:\\streamlined\\HarmonyCoreiFusion\\src\\test\\resources\\pyscripts\\pinger.py (The system cannot find the path specified)')",Smoke
+RestApiTests,dsnDataWithAPIGet,API,WIN10,Fail,NA,file://E:/HarmonyCoreiFusion/ScreenShots/HealthCheck_IPTraceAndValiadte_null_null.png,"IOError: (2  'File not found - D:\\streamlined\\HarmonyCoreiFusion\\src\\test\\resources\\pyscripts\\tracert.py (The system cannot find the path specified)')",Smoke
+RestApiTests,loginTestWithAPIPost,API,WIN10,Pass, ,NA,"NA",Smoke
+IFusionTest,loginApplication,firefox,WIN10,Skipped,NA,NA,"NA",Smoke
+IFusionTest,updateSource,firefox,WIN10,Skipped,NA,NA,"NA",Smoke
+IFusionTest,createSource,firefox,WIN10,Skipped,NA,NA,"NA",Smoke
+IFusionTest,dsnSource,firefox,WIN10,Skipped,NA,NA,"NA",Smoke
+IFusionTest,editDSN,firefox,WIN10,Skipped,NA,NA,"NA",Smoke
+IFusionTest,editSource,firefox,WIN10,Skipped,NA,NA,"NA",Smoke
+IFusionTest,logOutApplication,firefox,WIN10,Skipped,NA,NA,"NA",Smoke
+IFusionTest,loginApplication,chrome,WIN10,Skipped,NA,NA,"NA",Smoke
+IFusionTest,updateSource,chrome,WIN10,Skipped,NA,NA,"NA",Smoke
+IFusionTest,createSource,chrome,WIN10,Skipped,NA,NA,"NA",Smoke
+IFusionTest,dsnSource,chrome,WIN10,Skipped,NA,NA,"NA",Smoke
+IFusionTest,editDSN,chrome,WIN10,Skipped,NA,NA,"NA",Smoke
+IFusionTest,editSource,chrome,WIN10,Skipped,NA,NA,"NA",Smoke
+IFusionTest,logOutApplication,chrome,WIN10,Skipped,NA,NA,"NA",Smoke
