@@ -1,9 +1,0 @@
-Senario Name,Test Name,Browser Name,Os Name,Test Status,Test Data Row,Link to Screen Shot,Error Log,Test Type
-Rallyhoodtestcases,RallyhoodTC_01,firefox,WIN7,Pass,RH1,NA,"NA",Smoke
-Rallyhoodtestcases,RallyhoodTC_02,firefox,WIN7,Pass,RH1,NA,"NA",Smoke
-Rallyhoodtestcases,RallyhoodTC_03,firefox,WIN7,Fail,RH1,file://E:/HarmonyCoreiFusion/ScreenShots/Rallyhoodtestcases_RallyhoodTC_03_WIN7_firefox.png,"org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection Build info: version: '3.6.0'  revision: '6fbf3ec767'  time: '2017-09-27T15:28:36.4Z' System info: host: 'IM-LP-322'  ip: '192.168.205.116'  os.name: 'Windows 7'  os.arch: 'amd64'  os.version: '6.1'  java.version: '1.8.0_151' Driver info: org.openqa.selenium.firefox.FirefoxDriver Capabilities [{moz:profile=C:\Users\mbaragapu\AppData\Local\Temp\rust_mozprofile.HQHYytRsdvG3  rotatable=false  timeouts={implicit=0  pageLoad=300000  script=30000}  pageLoadStrategy=normal  moz:headless=false  platform=XP  moz:accessibilityChecks=false  acceptInsecureCerts=true  browserVersion=58.0  platformVersion=6.1  moz:processID=5172  browserName=firefox  javascriptEnabled=true  platformName=XP  moz:webdriverClick=true}] Session ID: e696937a-59ca-4186-a329-db6b6809a86d",Smoke
-Rallyhoodtestcases,RallyhoodTC_05,firefox,WIN7,Skipped,RH1,NA,"NA",Smoke
-Rallyhoodtestcases,RallyhoodTC_06,firefox,WIN7,Skipped,RH1,NA,"NA",Smoke
-Rallyhoodtestcases,RallyhoodTC_07,firefox,WIN7,Skipped,RH1,NA,"NA",Smoke
-Rallyhoodtestcases,RallyhoodTC_08,firefox,WIN7,Skipped,RH1,NA,"NA",Smoke
-Rallyhoodtestcases,RallyhoodTC_09,firefox,WIN7,Skipped,RH1,NA,"NA",Smoke

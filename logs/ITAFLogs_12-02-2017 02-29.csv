@@ -1,0 +1,2 @@
+Senario Name,Test Name,Browser Name,Os Name,Test Status,Test Data Row,Link to Screen Shot,Error Log,Test Type
+RallyhoodtestcasesChrome,RallyhoodTC_39,edge,WIN10,Fail,NA,file://D:/Rallyhood/ScreenShots/RallyhoodtestcasesChrome_RallyhoodTC_39_WIN10_edge.png,"org.testng.TestNGException:  Data Provider public java.lang.Object[][] com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome.RHhomeDP() must return either Object[][] or Iterator<Object>[]  not class [[Ljava.lang.Object;",Smoke

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Automation Suite" thread-count="10" parallel="tests">
+<suite name="Automation Suite" thread-count="20" parallel="tests">
 	<groups>
 		<run>
 			<include name="Smoke" />
@@ -13,24 +13,34 @@
 
 
 	
-	
 	<test name="Rallyhood web Automation Tests_firefox" enabled="true">
 		<!-- browser value as firefox or chrome or API -->
 		<parameter name="browser" value="firefox" />
-		<parameter name="os" value="WIN7" />
+		<parameter name="os" value="WIN10" />
 		<classes>
 			<class name="com.web.tests.webtestcases.rallyhood.Rallyhoodtestcases" />
 		</classes>
 	</test>
 	
+	 
 	
 	<test name="Rallyhood web Automation Tests_chrome" enabled="true">
 		<!-- browser value as firefox or chrome or API -->
 		<parameter name="browser" value="chrome" />
-		<parameter name="os" value="WIN7" />
+		<parameter name="os" value="WIN10" />
 		<classes>
 			<class name="com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome" />
 		</classes>
+	</test>
+	
+	
+	<test name="Rallyhood web Automation Tests_edge" enabled="true">
+		<!-- browser value as firefox or chrome or API -->
+		<parameter name="browser" value="edge" />
+		<parameter name="os" value="WIN10" />
+		<classes>
+			<class name="com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge" />
+		</classes>  
 	</test>
 
 	

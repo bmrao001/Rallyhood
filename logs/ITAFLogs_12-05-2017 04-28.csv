@@ -1,0 +1,45 @@
+Senario Name,Test Name,Browser Name,Os Name,Test Status,Test Data Row,Link to Screen Shot,Error Log,Test Type
+RallyhoodtestcasesEdge,RallyhoodTC_08,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_09,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_13,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_15,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_17,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_20,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_21,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_27,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_28,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_33,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_34,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_35,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_36,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_37,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_39,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_41,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_43,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_44,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_01,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_02,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_03,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_05,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_06,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_07,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_10,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_11,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_12,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_14,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_16,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_18,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_19,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_22,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_23,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_24,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_25,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_26,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_29,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_30,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_31,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_32,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_38,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_40,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_42,edge,WIN10,Fail,RH1,file://D:/Rallyhood/ScreenShots/RallyhoodtestcasesEdge_RallyhoodTC_42_WIN10_edge.png,"java.lang.AssertionError: Test case failed due to exception No such element (WARNING: The server did not provide any stacktrace information) Command duration or timeout: 0 milliseconds For documentation on this error  please visit: http://seleniumhq.org/exceptions/no_such_element.html Build info: version: '3.6.0'  revision: '6fbf3ec767'  time: '2017-09-27T15:28:36.4Z' System info: host: 'IM-LP-717'  ip: '192.168.205.138'  os.name: 'Windows 10'  os.arch: 'amd64'  os.version: '10.0'  java.version: '1.8.0_151' Driver info: org.openqa.selenium.edge.EdgeDriver Capabilities [{applicationCacheEnabled=true  pageLoadStrategy=normal  platform=WINDOWS  acceptSslCerts=true  browserVersion=38.14393.0.0  platformVersion=10  locationContextEnabled=true  webStorageEnabled=true  browserName=MicrosoftEdge  takesScreenshot=true  takesElementScreenshot=true  javascriptEnabled=true  platformName=WINDOWS}] Session ID: A6E6AFA1-D580-4917-B4AD-0CBB6EBB54B0 *** Element info: {Using=xpath  value=(//a[@class='rally ember-view'])[1]} expected [true] but found [false]",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_45,edge,WIN10,Fail,RH1,file://D:/Rallyhood/ScreenShots/RallyhoodtestcasesEdge_RallyhoodTC_45_WIN10_edge.png,"org.openqa.selenium.WebDriverException: A window size operation failed because the window is not currently available (WARNING: The server did not provide any stacktrace information) Command duration or timeout: 0 milliseconds Build info: version: '3.6.0'  revision: '6fbf3ec767'  time: '2017-09-27T15:28:36.4Z' System info: host: 'IM-LP-717'  ip: '192.168.205.138'  os.name: 'Windows 10'  os.arch: 'amd64'  os.version: '10.0'  java.version: '1.8.0_151' Driver info: org.openqa.selenium.edge.EdgeDriver Capabilities [{applicationCacheEnabled=true  pageLoadStrategy=normal  platform=WINDOWS  acceptSslCerts=true  browserVersion=38.14393.0.0  platformVersion=10  locationContextEnabled=true  webStorageEnabled=true  browserName=MicrosoftEdge  takesScreenshot=true  takesElementScreenshot=true  javascriptEnabled=true  platformName=WINDOWS}] Session ID: A6E6AFA1-D580-4917-B4AD-0CBB6EBB54B0",Smoke

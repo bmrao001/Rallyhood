@@ -111,6 +111,7 @@ public class DriverManager {
 		
 		dc.setCapability("ignoreZoomSetting", true);
 		dc.setCapability("ignoreProtectedModeSettings", true);
+		dc.setCapability("mobileEmulationEnabled", true);
 		
 		switch(browser.toLowerCase()) {
 		
@@ -134,7 +135,7 @@ public class DriverManager {
 								dc.setPlatform(Platform.extractFromSysProperty(OSname)); 
 							
 							break;
-			case "chrome": dc = DesiredCapabilities.chrome();
+			case "chrome": dc = DesiredCapabilities.chrome(); 
 							
 							if(isLocalDriver) {
 								System.setProperty("webdriver.chrome.driver", getCurrentProjectDirecotry()

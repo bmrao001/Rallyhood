@@ -1,78 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [Automation Suite]" parallel="tests">
+<suite thread-count="20" guice-stage="DEVELOPMENT" name="Failed suite [Automation Suite]" parallel="tests">
   <listeners>
     <listener class-name="com.innominds.team.listeners.TestReportListner"/>
   </listeners>
-  <test name="Rallyhood web Automation Tests_chrome(failed)" parallel="tests">
-    <parameter name="os" value="WIN7"/>
-    <parameter name="browser" value="chrome"/>
+  <test name="Rallyhood web Automation Tests_edge(failed)" parallel="tests">
+    <parameter name="os" value="WIN10"/>
+    <parameter name="browser" value="edge"/>
     <groups>
       <run>
         <include name="Smoke"/>
       </run>
     </groups>
     <classes>
-      <class name="com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome">
+      <class name="com.web.tests.webtestcases.rallyhood.Rallyhoodtestcases">
         <methods>
-          <include name="RallyhoodTC_38" invocation-numbers="0"/>
-          <include name="RallyhoodTC_35" invocation-numbers="0"/>
-          <include name="RallyhoodTC_32" invocation-numbers="0"/>
-          <include name="RallyhoodTC_43" invocation-numbers="0"/>
-          <include name="RallyhoodTC_37" invocation-numbers="0"/>
-          <include name="RallyhoodTC_34" invocation-numbers="0"/>
+          <include name="takeScreenShot"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.web.tests.webtestcases.rallyhood.Rallyhoodtestcases -->
+      <class name="com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge">
+        <methods>
           <include name="RallyhoodTC_45" invocation-numbers="0"/>
           <include name="RallyhoodTC_42" invocation-numbers="0"/>
-          <include name="RallyhoodTC_33" invocation-numbers="0"/>
-          <include name="RallyhoodTC_30" invocation-numbers="0"/>
-          <include name="RallyhoodTC_40" invocation-numbers="0"/>
-          <include name="RallyhoodTC_36" invocation-numbers="0"/>
+          <include name="RallyhoodTC_43" invocation-numbers="0"/>
           <include name="takeScreenShot"/>
           <include name="init"/>
+          <include name="RallyhoodTC_41" invocation-numbers="0"/>
+          <include name="RallyhoodTC_44" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome -->
-      <class name="com.web.tests.webtestcases.rallyhood.Rallyhoodtestcases">
-        <methods>
-          <include name="takeScreenShot"/>
-          <include name="init"/>
-        </methods>
-      </class> <!-- com.web.tests.webtestcases.rallyhood.Rallyhoodtestcases -->
-    </classes>
-  </test> <!-- Rallyhood web Automation Tests_chrome(failed) -->
-  <test name="Rallyhood web Automation Tests_firefox(failed)" parallel="tests">
-    <parameter name="os" value="WIN7"/>
-    <parameter name="browser" value="firefox"/>
-    <groups>
-      <run>
-        <include name="Smoke"/>
-      </run>
-    </groups>
-    <classes>
+      </class> <!-- com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge -->
       <class name="com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome">
         <methods>
           <include name="takeScreenShot"/>
           <include name="init"/>
         </methods>
       </class> <!-- com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesChrome -->
-      <class name="com.web.tests.webtestcases.rallyhood.Rallyhoodtestcases">
-        <methods>
-          <include name="RallyhoodTC_40" invocation-numbers="0"/>
-          <include name="RallyhoodTC_31" invocation-numbers="0"/>
-          <include name="RallyhoodTC_33" invocation-numbers="0"/>
-          <include name="RallyhoodTC_32" invocation-numbers="0"/>
-          <include name="RallyhoodTC_35" invocation-numbers="0"/>
-          <include name="RallyhoodTC_12" invocation-numbers="0"/>
-          <include name="RallyhoodTC_34" invocation-numbers="0"/>
-          <include name="RallyhoodTC_26" invocation-numbers="0"/>
-          <include name="RallyhoodTC_37" invocation-numbers="0"/>
-          <include name="RallyhoodTC_36" invocation-numbers="0"/>
-          <include name="RallyhoodTC_27" invocation-numbers="0"/>
-          <include name="RallyhoodTC_38" invocation-numbers="0"/>
-          <include name="RallyhoodTC_09" invocation-numbers="0"/>
-          <include name="takeScreenShot"/>
-          <include name="init"/>
-        </methods>
-      </class> <!-- com.web.tests.webtestcases.rallyhood.Rallyhoodtestcases -->
     </classes>
-  </test> <!-- Rallyhood web Automation Tests_firefox(failed) -->
+  </test> <!-- Rallyhood web Automation Tests_edge(failed) -->
 </suite> <!-- Failed suite [Automation Suite] -->

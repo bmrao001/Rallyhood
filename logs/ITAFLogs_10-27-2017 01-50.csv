@@ -1,4 +1,0 @@
-Senario Name,Test Name,Browser Name,Os Name,Test Status,Test Data Row,Link to Screen Shot,Error Log,Test Type
-RestApiTests,dsnDataWithAPIGet,API,WIN10,Pass, ,NA,"NA",Smoke
-RestApiTests,loginTestWithAPIPost,API,WIN10,Pass, ,NA,"NA",Smoke
-HealthCheck,IPTraceAndValiadte,Console,win10,Pass,TD 1,NA,"NA",Smoke

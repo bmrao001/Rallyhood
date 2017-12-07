@@ -1,0 +1,22 @@
+Senario Name,Test Name,Browser Name,Os Name,Test Status,Test Data Row,Link to Screen Shot,Error Log,Test Type
+Rallyhoodtestcases,RallyhoodTC_22,firefox,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_22,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesChrome,RallyhoodTC_22,chrome,WIN10,Pass,RH1,NA,"NA",Smoke
+Rallyhoodtestcases,RallyhoodTC_23,firefox,WIN10,Pass,RH1,NA,"NA",Smoke
+Rallyhoodtestcases,RallyhoodTC_24,firefox,WIN10,Pass,RH1,NA,"NA",Smoke
+Rallyhoodtestcases,RallyhoodTC_25,firefox,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_23,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_24,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesChrome,RallyhoodTC_23,chrome,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_25,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesChrome,RallyhoodTC_24,chrome,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesChrome,RallyhoodTC_25,chrome,WIN10,Pass,RH1,NA,"NA",Smoke
+Rallyhoodtestcases,RallyhoodTC_26,firefox,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_26,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesChrome,RallyhoodTC_26,chrome,WIN10,Pass,RH1,NA,"NA",Smoke
+Rallyhoodtestcases,RallyhoodTC_29,firefox,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_29,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesChrome,RallyhoodTC_29,chrome,WIN10,Pass,RH1,NA,"NA",Smoke
+Rallyhoodtestcases,RallyhoodTC_30,firefox,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesEdge,RallyhoodTC_30,edge,WIN10,Pass,RH1,NA,"NA",Smoke
+RallyhoodtestcasesChrome,RallyhoodTC_30,chrome,WIN10,Pass,RH1,NA,"NA",Smoke

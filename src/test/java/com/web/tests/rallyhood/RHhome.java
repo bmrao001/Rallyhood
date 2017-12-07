@@ -36,7 +36,6 @@ import com.innominds.team.utils.PropertyFileUtils;
 import io.appium.java_client.AppiumDriver;
 
 public class RHhome extends PageActionUtils {
-
 	
 
 	Logger logger = LogManager.getLogger(RHhome.class.getName());
@@ -643,23 +642,29 @@ public class RHhome extends PageActionUtils {
 			try {	
 				//Thread.sleep(5000);
 				//waitForPageLoaded(driver);
-				WaitForElement(dp, driver, getWebElement(dp.or, "EventReadMore", driver));
-				if(getWebElement(dp.or, "EventReadMore", driver).isDisplayed()) {
-					Assert.assertEquals(getWebElement(dp.or, "EventReadMore", driver).getText(), "  ... (read more)");
-					Reporter.log("'Read More' link to view full content of an Event is displayed" , true);}
+				List<WebElement> rw = driver.findElements(By.xpath("//div[@class='description ember-view truncated']//span[@class='ellipsis']"));
+				int isPresent = rw.size();
+					if(isPresent>0) {
+							Assert.assertEquals(getWebElement(dp.or, "EventReadMore", driver).getText(), "  ... (read more)");
+							Reporter.log("'Read More' link to view full content of an Event is displayed" , true);}
+					else {Reporter.log("'Read More' link is not available as the existing content text is less than 100 chars" , true);}
+				
 			 } catch (Exception e) {
 			Assert.assertTrue(false, "Test case failed due to exception " + e.getMessage());}}
 		
 //-----------------------------------------------------------------------------------------------------------------------------------		
 		
 		public void Group_ReadMore_Expand_Presence(RHhomeDP dp, WebDriver driver) {
-			try {	
-				//Thread.sleep(5000);
-				//waitForPageLoaded(driver);
-				WaitForElement(dp, driver, getWebElement(dp.or, "GroupReadMore", driver));
-				if(getWebElement(dp.or, "GroupReadMore", driver).isDisplayed()) {
-					Assert.assertEquals(getWebElement(dp.or, "GroupReadMore", driver).getText(), "  ... (read more)");
-					Reporter.log("'Read More' link to view full content of an Group is displayed" , true);}
+			try {
+				Thread.sleep(5000);
+				waitForPageLoaded(driver);
+				List<WebElement> rw = driver.findElements(By.xpath("//div[@class='description ember-view truncated']//span[@class='ellipsis']"));
+				int isPresent = rw.size();
+					if(isPresent>0) {
+							Thread.sleep(5000);
+							Assert.assertEquals(getWebElement(dp.or, "GroupReadMore", driver).getText(), "  ... (read more)");
+							Reporter.log("'Read More' link to view full content of an Group is displayed" , true);
+					}else {Reporter.log("'Read More' link is not available as the existing content text is less than 100 chars" , true);}
 			 } catch (Exception e) {
 			Assert.assertTrue(false, "Test case failed due to exception " + e.getMessage());}}
 		
@@ -1113,11 +1118,14 @@ public class RHhome extends PageActionUtils {
 			try {	
 				//Thread.sleep(5000);
 				//waitForPageLoaded(driver);
-				WaitForElement(dp, driver, getWebElement(dp.or, "EventReadMore", driver));
-				if(getWebElement(dp.or, "EventReadMore", driver).isDisplayed()) {
-					Assert.assertEquals(getWebElement(dp.or, "EventReadMore", driver).getText(), "  ... (read more)");
-					getWebElement(dp.or, "EventReadMore", driver).click();
-					Reporter.log("'Read More' link to view full content of an Event is enabled and Clicked" , true);}
+				List<WebElement> rw = driver.findElements(By.xpath("//div[@class='description ember-view truncated']//span[@class='ellipsis']"));
+				int isPresent = rw.size();
+					if(isPresent>0) {
+							Assert.assertEquals(getWebElement(dp.or, "EventReadMore", driver).getText(), "  ... (read more)");
+							getWebElement(dp.or, "EventReadMore", driver).click();
+							Reporter.log("'Read More' link to view full content of an Event is enabled and Clicked" , true);}
+					else {Reporter.log("'Read More' link is not available as the existing content text is less than 100 chars" , true);}
+				//------------
 			 } catch (Exception e) {
 			Assert.assertTrue(false, "Test case failed due to exception " + e.getMessage());}}
 		
@@ -1125,14 +1133,17 @@ public class RHhome extends PageActionUtils {
 		
 		public void Group_ReadMore_Expand_Click(RHhomeDP dp, WebDriver driver) {
 			try {	
-				//Thread.sleep(5000);
-				//waitForPageLoaded(driver);
-				WaitForElement_Click(dp, driver, getWebElement(dp.or, "GroupReadMore", driver));
-				if(getWebElement(dp.or, "GroupReadMore", driver).isDisplayed()) {
-					Assert.assertEquals(getWebElement(dp.or, "GroupReadMore", driver).getText(), "  ... (read more)");
-					getWebElement(dp.or, "GroupReadMore", driver).click();
-					Reporter.log("'Read More' link to view full content of a Group is enabled and Clicked" , true);}
-			 } catch (Exception e) {
+				Thread.sleep(5000);
+				waitForPageLoaded(driver);
+				List<WebElement> rw = driver.findElements(By.xpath("//div[@class='description ember-view truncated']//span[@class='ellipsis']"));
+				int isPresent = rw.size();
+					if(isPresent>0) {
+							Assert.assertEquals(getWebElement(dp.or, "GroupReadMore", driver).getText(), "  ... (read more)");
+							getWebElement(dp.or, "GroupReadMore", driver).click();
+							Reporter.log("'Read More' link to view full content of a Group is enabled and Clicked" , true);}
+						else {Reporter.log("'Read More' link is not available as the existing content text is less than 100 chars" , true);}
+
+			 } catch (Exception e) { 
 			Assert.assertTrue(false, "Test case failed due to exception " + e.getMessage());}}	
 		
 		
@@ -2280,7 +2291,7 @@ public class RHhome extends PageActionUtils {
 	
 					
 		public void RallyHood_Single_GroupClasses_InstructorSignUp_Verify(RHhomeDP dp, WebDriver driver) {
-			try { //Thread.sleep(5000);
+			try { //Thread.sleep(5000); 
 					waitForPageLoaded(driver);
 					WaitForElement(dp, driver, getWebElement(dp.or, "RHClasses", driver));
 					pointingDownElements(dp, driver,getWebElement(dp.or, "RHClasses", driver) );
@@ -2289,20 +2300,24 @@ public class RHhome extends PageActionUtils {
 						Thread.sleep(2000);
 						Reporter.log("Rallyhood home scree have Groups and Classes Listed, First Listed Class in a Group is Clickable and performed Click Operation", true);
 						
-						Group_Current_UpcomingClass_BeforeSignUp_Presence(dp, driver);
-						Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);
-						Group_Class_BeforeSignUp_InstructorName_Click(dp, driver);
-						
-						Group_Class_Instructor_SignUp_Button_Presence(dp, driver);
-						Group_Class_Instructor_SignUp_Button_Click(dp, driver);
-						Group_Class_Instructor_SignUpYes_Calander_Presence(dp, driver);
-						
-						Group_Class_InstructorName_AfterSignUp_Presence(dp, driver);
-						Group_Class_AfterSignUp_InstructorName_Click(dp, driver);
-						
-						Group_Class_Instructor_Remove_Button_Presence(dp, driver);
-						Group_Class_Instructor_Remove_Button_Click(dp, driver);
-						Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);
+						List<WebElement> a = driver.findElements(By.xpath("//article[@class='time-slot ember-view none']//div[@class='info']"));
+						int ElePresence = a.size();
+						if(ElePresence>0) {
+							Group_Current_UpcomingClass_BeforeSignUp_Presence(dp, driver); 
+							Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);
+							Group_Class_BeforeSignUp_InstructorName_Click(dp, driver);
+							
+							Group_Class_Instructor_SignUp_Button_Presence(dp, driver);
+							Group_Class_Instructor_SignUp_Button_Click(dp, driver);
+							Group_Class_Instructor_SignUpYes_Calander_Presence(dp, driver);
+							
+							Group_Class_InstructorName_AfterSignUp_Presence(dp, driver);
+							Group_Class_AfterSignUp_InstructorName_Click(dp, driver);
+							
+							Group_Class_Instructor_Remove_Button_Presence(dp, driver);
+							Group_Class_Instructor_Remove_Button_Click(dp, driver);
+							Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);
+						}else {Reporter.log("Even a single Class is not present" , true);}
 						
 						driver.navigate().back();
 						WaitForElement(dp, driver, getWebElement(dp.or, "RHClasses", driver));
@@ -2330,13 +2345,37 @@ public class RHhome extends PageActionUtils {
 					pointingDownElements(dp, driver, we);
 					click(we);
 					
-					
+					 
 					////////////////////////////////////////////////////////////
 					waitForPageLoaded(driver);
-					WaitForElement_Click(dp, driver, getWebElement(dp.or, "GroupSingleClass", driver));
+					//WaitForElement_Click(dp, driver, getWebElement(dp.or, "GroupSingleClass", driver)); 
 					List<WebElement> MultiClasses = driver.findElements(By.xpath("(//article[@class='time-slot ember-view none']//div[@class='info'])"));
 					int MultiClassesSize = MultiClasses.size();
-					Reporter.log("Rallyhood Total Classes Present in a Group:: "+MultiClassesSize , true);
+					if(MultiClassesSize>0) {
+						Reporter.log("Rallyhood Total Classes Present in a Group:: "+MultiClassesSize , true);
+						for(int j=1;j<=MultiClassesSize;j++) { //Classes Loop Starting
+							
+							String xpathString1 = "(//article[@class='time-slot ember-view none']//div[@class='info'])";
+							WebElement we1 = driver.findElement(By.xpath(xpathString1));
+							
+							WaitForElement(dp, driver, we1);
+							pointingDownElements(dp, driver, we1);
+							
+								
+							Group_Current_UpcomingClass_BeforeSignUp_Presence(dp, driver);
+							Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);
+							Group_Class_Date_BeforeSignUpPresence(dp, driver);
+							we1.click();
+							//Group_Class_BeforeSignUp_InstructorName_Click(dp, driver);
+							
+							Group_Class_Instructor_SignUp_Button_Presence(dp, driver);
+							Group_Class_Instructor_SignUp_Button_Click(dp, driver);
+							Group_Class_Instructor_SignUpYes_Calander_Presence(dp, driver);
+								
+						}//Classes Loop Ending
+					}else {Reporter.log("Not Even a single class is present" , true);}
+					
+					/*Reporter.log("Rallyhood Total Classes Present in a Group:: "+MultiClassesSize , true);
 					for(int j=1;j<=MultiClassesSize;j++) { //Classes Loop Starting
 						
 						String xpathString1 = "(//article[@class='time-slot ember-view none']//div[@class='info'])";
@@ -2357,7 +2396,7 @@ public class RHhome extends PageActionUtils {
 						Group_Class_Instructor_SignUpYes_Calander_Presence(dp, driver);
 							
 					}//Classes Loop Ending
-					/////////////////////////////////////////////////////////////
+*/					/////////////////////////////////////////////////////////////
 					driver.navigate().back();
 					Reporter.log("- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ", true);
 					WaitForElement(dp, driver, getWebElement(dp.or, "RHClasses", driver));	
@@ -2396,7 +2435,24 @@ public class RHhome extends PageActionUtils {
 				//WaitForElement_Click(dp, driver, getWebElement(dp.or, "GroupSingleClass", driver));
 				List<WebElement> MultiClasses = driver.findElements(By.xpath("(//article[@class='time-slot ember-view yes']//div[@class='info'])"));
 				int MultiClassesSize = MultiClasses.size();
-				Reporter.log("Rallyhood Total Classes Present in a Group:: "+MultiClassesSize , true);
+				if(MultiClassesSize>0) {
+					Reporter.log("Rallyhood Total Classes Present in a Group:: "+MultiClassesSize , true);
+					for(WebElement we1: MultiClasses) { //Classes Loop Starting
+						
+						WaitForElement(dp, driver, we1);
+						pointingDownElements(dp, driver, we1);
+					
+						
+						Group_Class_InstructorName_AfterSignUp_Presence(dp, driver);
+						we1.click();
+						Group_Class_Instructor_Remove_Button_Presence(dp, driver);
+						Group_Class_Instructor_Remove_Button_Click(dp, driver);
+						Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);	
+					}//Classes Loop Ending
+					
+				}else {Reporter.log("Not even a single class is present" , true);}
+				
+				/*Reporter.log("Rallyhood Total Classes Present in a Group:: "+MultiClassesSize , true);
 				for(WebElement we1: MultiClasses) { //Classes Loop Starting
 					
 					WaitForElement(dp, driver, we1);
@@ -2409,7 +2465,7 @@ public class RHhome extends PageActionUtils {
 					Group_Class_Instructor_Remove_Button_Click(dp, driver);
 					Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);	
 				}//Classes Loop Ending
-				/////////////////////////////////////////////////////////////
+*/				/////////////////////////////////////////////////////////////
 				
 					driver.navigate().back();
 					Reporter.log("- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ", true);
@@ -2452,7 +2508,7 @@ public class RHhome extends PageActionUtils {
 		//To Verify Read More.. expand link Functionality in a class for All available Group, in Groups and Classes
 		public void RallyHood_Multiple_GroupClasses_InstructorName_Date_Location_Verify(RHhomeDP dp, WebDriver driver) {
 			try {	
-				//Thread.sleep(5000);
+				//Thread.sleep(5000); 
 				waitForPageLoaded(driver);
 				WaitForElement_Click(dp, driver, getWebElement(dp.or, "RHClasses", driver));
 				List<WebElement> MultiGroups = driver.findElements(By.xpath("(//a[@class='rally ember-view'])"));
@@ -2469,33 +2525,38 @@ public class RHhome extends PageActionUtils {
 					
 					////////////////////////////////////////////////////////////
 					waitForPageLoaded(driver);
-					WaitForElement_Click(dp, driver, getWebElement(dp.or, "GroupSingleClass", driver));
+					//WaitForElement_Click(dp, driver, getWebElement(dp.or, "GroupSingleClass", driver));
 					List<WebElement> MultiClasses = driver.findElements(By.xpath("(//article[@class='time-slot ember-view none']//div[@class='info'])"));
 					int MultiClassesSize = MultiClasses.size();
-					Reporter.log("Rallyhood Total Classes Present in a Group:: "+MultiClassesSize , true);
-					for(int j=1;j<=MultiClassesSize;j++) { //Classes Loop Starting
-						
-						String xpathString1 = "(//article[@class='time-slot ember-view none']//div[@class='info'])";
-						WebElement we1 = driver.findElement(By.xpath(xpathString1));
-						
-						WaitForElement(dp, driver, we1);
-						pointingDownElements(dp, driver, we1);
-						
+					
+					if(MultiClassesSize>0) {
+						Reporter.log("Rallyhood Total Classes Present in a Group:: "+MultiClassesSize , true);
+						for(int j=1;j<=MultiClassesSize;j++) { //Classes Loop Starting
 							
-						Group_Current_UpcomingClass_BeforeSignUp_Presence(dp, driver);
-						Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);
-						Group_Class_Date_BeforeSignUpPresence(dp, driver);
-						Group_Class_Time_BeforeSignUp_Presence(dp, driver);
-						
-						we1.click();
-						//Group_Class_BeforeSignUp_InstructorName_Click(dp, driver);
-						
-						Group_Class_Instructor_SignUp_Button_Presence(dp, driver);
-						Group_Class_Instructor_SignUp_Button_Click(dp, driver);
-						Group_Class_Instructor_SignUpYes_Calander_Presence(dp, driver);
+							String xpathString1 = "(//article[@class='time-slot ember-view none']//div[@class='info'])";
+							WebElement we1 = driver.findElement(By.xpath(xpathString1));
 							
-					}//Classes Loop Ending
-					/////////////////////////////////////////////////////////////
+							WaitForElement(dp, driver, we1);
+							pointingDownElements(dp, driver, we1);
+							
+								
+							Group_Current_UpcomingClass_BeforeSignUp_Presence(dp, driver);
+							Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);
+							Group_Class_Date_BeforeSignUpPresence(dp, driver);
+							Group_Class_Time_BeforeSignUp_Presence(dp, driver);
+							
+							we1.click();
+							//Group_Class_BeforeSignUp_InstructorName_Click(dp, driver);
+							
+							Group_Class_Instructor_SignUp_Button_Presence(dp, driver);
+							Group_Class_Instructor_SignUp_Button_Click(dp, driver);
+							Group_Class_Instructor_SignUpYes_Calander_Presence(dp, driver);
+								
+						}//Classes Loop Ending
+						/////////////////////////////////////////////////////////////
+					}else {Reporter.log("Not even a single class is present" , true);}
+					
+					
 					driver.navigate().back();
 					Reporter.log("- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ", true);
 					WaitForElement(dp, driver, getWebElement(dp.or, "RHClasses", driver));	
@@ -2518,20 +2579,24 @@ public class RHhome extends PageActionUtils {
 						Thread.sleep(2000);
 						Reporter.log("Rallyhood home scree have Groups and Classes Listed, First Listed Class in a Group is Clickable and performed Click Operation", true);
 						
-						Group_Current_UpcomingClass_BeforeSignUp_Presence(dp, driver);
-						Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);
-						Group_Class_BeforeSignUp_InstructorName_Click(dp, driver);
-						
-						Group_Class_Instructor_SignUp_Button_Presence(dp, driver);
-						Group_Class_Instructor_SignUp_Button_Click(dp, driver);
-						Group_Class_Instructor_SignUpYes_Calander_Presence(dp, driver);
-						
-						Group_Class_InstructorName_AfterSignUp_Presence(dp, driver);
-						Group_Class_AfterSignUp_InstructorName_Click(dp, driver);
-						
-						Group_Class_Instructor_Remove_Button_Presence(dp, driver);
-						Group_Class_Instructor_Remove_Button_Click(dp, driver);
-						Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);
+						List<WebElement> a = driver.findElements(By.xpath("//article[@class='time-slot ember-view none']//div[@class='info']"));
+						int b=a.size();
+						if(b>0) {
+							Group_Current_UpcomingClass_BeforeSignUp_Presence(dp, driver);
+							Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);
+							Group_Class_BeforeSignUp_InstructorName_Click(dp, driver);
+							
+							Group_Class_Instructor_SignUp_Button_Presence(dp, driver);
+							Group_Class_Instructor_SignUp_Button_Click(dp, driver);
+							Group_Class_Instructor_SignUpYes_Calander_Presence(dp, driver);
+							
+							Group_Class_InstructorName_AfterSignUp_Presence(dp, driver);
+							Group_Class_AfterSignUp_InstructorName_Click(dp, driver);
+							
+							Group_Class_Instructor_Remove_Button_Presence(dp, driver);
+							Group_Class_Instructor_Remove_Button_Click(dp, driver);
+							Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);
+						}else {Reporter.log("Not even a single class is present" , true);}
 						
 						driver.navigate().back();
 						WaitForElement(dp, driver, getWebElement(dp.or, "RHClasses", driver));
@@ -2562,30 +2627,34 @@ public class RHhome extends PageActionUtils {
 					
 					////////////////////////////////////////////////////////////
 					waitForPageLoaded(driver);
-					WaitForElement_Click(dp, driver, getWebElement(dp.or, "GroupSingleClass", driver));
+					//WaitForElement_Click(dp, driver, getWebElement(dp.or, "GroupSingleClass", driver));
 					List<WebElement> MultiClasses = driver.findElements(By.xpath("(//article[@class='time-slot ember-view none']//div[@class='info'])"));
 					int MultiClassesSize = MultiClasses.size();
-					Reporter.log("Rallyhood Total Classes Present in a Group:: "+MultiClassesSize , true);
-					for(int j=1;j<=MultiClassesSize;j++) { //Classes Loop Starting
-						
-						String xpathString1 = "(//article[@class='time-slot ember-view none']//div[@class='info'])";
-						WebElement we1 = driver.findElement(By.xpath(xpathString1));
-						
-						WaitForElement(dp, driver, we1);
-						pointingDownElements(dp, driver, we1);
-						
+					if(MultiClassesSize>0) {
+						Reporter.log("Rallyhood Total Classes Present in a Group:: "+MultiClassesSize , true);
+						for(int j=1;j<=MultiClassesSize;j++) { //Classes Loop Starting
 							
-						Group_Current_UpcomingClass_BeforeSignUp_Presence(dp, driver);
-						Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);
-						we1.click();
-						//Group_Class_BeforeSignUp_InstructorName_Click(dp, driver);
-						
-						Group_Class_Instructor_SignUp_Button_Presence(dp, driver);
-						Group_Class_Instructor_SignUp_Button_Click(dp, driver);
-						Group_Class_Instructor_SignUpYes_Calander_Presence(dp, driver);
+							String xpathString1 = "(//article[@class='time-slot ember-view none']//div[@class='info'])";
+							WebElement we1 = driver.findElement(By.xpath(xpathString1));
 							
-					}//Classes Loop Ending
-					/////////////////////////////////////////////////////////////
+							WaitForElement(dp, driver, we1);
+							pointingDownElements(dp, driver, we1);
+							
+								
+							Group_Current_UpcomingClass_BeforeSignUp_Presence(dp, driver);
+							Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);
+							we1.click();
+							//Group_Class_BeforeSignUp_InstructorName_Click(dp, driver);
+							
+							Group_Class_Instructor_SignUp_Button_Presence(dp, driver);
+							Group_Class_Instructor_SignUp_Button_Click(dp, driver);
+							Group_Class_Instructor_SignUpYes_Calander_Presence(dp, driver);
+								
+						}//Classes Loop Ending
+						/////////////////////////////////////////////////////////////
+					}else {Reporter.log("Not even a single class is present" , true);}
+					
+					
 					driver.navigate().back();
 					Reporter.log("- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ", true);
 					WaitForElement(dp, driver, getWebElement(dp.or, "RHClasses", driver));	
@@ -2644,8 +2713,7 @@ public class RHhome extends PageActionUtils {
 					 } catch (Exception e) {
 					Assert.assertTrue(false, "Test case failed due to exception " + e.getMessage());}}
 		
-		
-	
+	 
 		//To Verify total each group having classes , where the verynext class is not past due dated class , as it should't be present.
 				public void RallyHood_Multiple_GroupClasses_ClassesDate_GreaterThanCurrentDate_Verify(RHhomeDP dp, WebDriver driver) {
 					try {	
@@ -2653,49 +2721,52 @@ public class RHhome extends PageActionUtils {
 						waitForPageLoaded(driver);
 						List<WebElement> MultiEvents = driver.findElements(By.xpath("(//a[@class='rally ember-view'])"));
 						int MultiEventsSize = MultiEvents.size();
-						Reporter.log("Rallyhood Total Groups Present is:: "+MultiEventsSize , true);
-						for(int i=1; i<=MultiEventsSize;i++) {
-							String xpthaString = "(//a[@class='rally ember-view'])"+"["+i+"]";
-							WebElement we = driver.findElement(By.xpath(xpthaString));
-							pointingDownElements(dp, driver, we);
-							we.click();
-							
-							Group_Current_UpcomingClass_BeforeSignUp_Presence(dp, driver);
-							Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);
-							
-							Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);
-							String UpcomingClassFirst = Group_Class_Date_BeforeSignUpReturnValue(dp, driver);
-							
-							String[] s = UpcomingClassFirst.split(" ");
-							String s1 = s[0];
-							String s2 = s[1];
-							String s3 = s2.replaceAll("[^0-9]", "");
-							String ActualDate = s3+"-"+s1+"-"+"17";
+							Reporter.log("Rallyhood Total Groups Present is:: "+MultiEventsSize , true);
+							for(int i=1; i<=MultiEventsSize;i++) {
+								String xpthaString = "(//a[@class='rally ember-view'])"+"["+i+"]";
+								WebElement we = driver.findElement(By.xpath(xpthaString));
+								pointingDownElements(dp, driver, we);
+								we.click();
+								
+								List<WebElement> a = driver.findElements(By.xpath("//article[@class='time-slot ember-view none']//div[@class='info']"));
+								int b = a.size();
+								
+								if(b>0) {
+									Group_Current_UpcomingClass_BeforeSignUp_Presence(dp, driver);
+									Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);
+									
+									Group_Class_InstructorName_BeforeSignUp_Presence(dp, driver);
+									String UpcomingClassFirst = Group_Class_Date_BeforeSignUpReturnValue(dp, driver);
+									
+									String[] s = UpcomingClassFirst.split(" ");
+									String s1 = s[0];
+									String s2 = s[1];
+									String s3 = s2.replaceAll("[^0-9]", "");
+									String ActualDate = s3+"-"+s1+"-"+"17";
 
-			
-							DateFormat formatter =new SimpleDateFormat("dd-MMM-yy");
-							Date convertedDate =(Date) formatter.parse(ActualDate); //first upcoming class date in  group and classes
-					       
-					        Date sysdate =  new Date();
-					        String cursysdate = formatter.format(sysdate);
-					        Date cursysdate1 = (Date) formatter.parse(cursysdate);	//system date
-							
-					        if(convertedDate.after(cursysdate1) || convertedDate.equals(cursysdate1)) {
-					        	Reporter.log("The very next upcoming instructors class date : "+ActualDate+" is greater or equal to that of current date: "+cursysdate, true);
-					        	Assert.assertTrue((convertedDate.after(cursysdate1) || convertedDate.equals(cursysdate1)), "Past dated instructor class is present, which is not expected");
-					        }else {Reporter.log("Past dated instructor class is present, which shouldn't be.", true);}
-					        
-					        
-					        Reporter.log("------------------------------------------------------------------------------------------",true);
-							
-					        driver.navigate().back();
-							WaitForElement(dp, driver, getWebElement(dp.or, "RHClasses", driver));
-						
-					}	
-					 } catch (Exception e) {
+					 
+									DateFormat formatter =new SimpleDateFormat("dd-MMM-yy");
+									Date convertedDate =(Date) formatter.parse(ActualDate); //first upcoming class date in  group and classes
+							       
+							        Date sysdate =  new Date();
+							        String cursysdate = formatter.format(sysdate);
+							        Date cursysdate1 = (Date) formatter.parse(cursysdate);	//system date
+									
+							        if(convertedDate.after(cursysdate1) || convertedDate.equals(cursysdate1)) {
+							        	Reporter.log("The very next upcoming instructors class date : "+ActualDate+" is greater or equal to that of current date: "+cursysdate, true);
+							        	Assert.assertTrue((convertedDate.after(cursysdate1) || convertedDate.equals(cursysdate1)), "Past dated instructor class is present, which is not expected");
+							        }else {Reporter.log("Past dated instructor class is present, which shouldn't be.", true);}
+								}else {Reporter.log("Not even a single class is present" , true);}
+								
+						        
+								driver.navigate().back();
+								WaitForElement(dp, driver, getWebElement(dp.or, "RHClasses", driver));
+								Reporter.log("------------------------------------------------------------------------------------------",true);
+					}
+				    } catch (Exception e) {
 					Assert.assertTrue(false, "Test case failed due to exception " + e.getMessage());}}
 		
-		
+		 
 		//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 		
 		
@@ -2703,10 +2774,7 @@ public class RHhome extends PageActionUtils {
 		
 		
 		
-		
-		
-		
-		
+
 		
 	
 	

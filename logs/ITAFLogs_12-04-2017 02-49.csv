@@ -1,0 +1,2 @@
+Senario Name,Test Name,Browser Name,Os Name,Test Status,Test Data Row,Link to Screen Shot,Error Log,Test Type
+RallyhoodtestcasesChrome,RallyhoodTC_40,chrome,WIN10,Fail,RH1,file://D:/Rallyhood/ScreenShots/RallyhoodtestcasesChrome_RallyhoodTC_40_WIN10_chrome.png,"java.lang.AssertionError: Test case failed due to exception null expected [true] but found [false]",Smoke

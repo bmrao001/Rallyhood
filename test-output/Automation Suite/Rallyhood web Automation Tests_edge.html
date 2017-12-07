@@ -1,0 +1,1482 @@
+<html>
+<head>
+<title>TestNG:  Rallyhood web Automation Tests_edge</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Rallyhood web Automation Tests_edge</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>39/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Dec 07 12:35:30 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>1819 seconds (1819143 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>Smoke </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_41()'><b>RallyhoodTC_41</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@5ee7e933, org.testng.TestRunner@61ca72bc</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: A window size operation failed because the window is not currently available (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-717&apos;, ip: &apos;192.168.237.62&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
+Session ID: 88BCD01C-B7F9-4A71-9588-22BFF01512A1
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:877)
+	at com.innominds.team.driverinit.DriverManager.loadURL(DriverManager.java:288)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_41(RallyhoodtestcasesEdge.java:493)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1177590952", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1177590952'><pre>org.openqa.selenium.WebDriverException: A window size operation failed because the window is not currently available (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-717&apos;, ip: &apos;192.168.237.62&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
+Session ID: 88BCD01C-B7F9-4A71-9588-22BFF01512A1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:877)
+	at com.innominds.team.driverinit.DriverManager.loadURL(DriverManager.java:288)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_41(RallyhoodtestcasesEdge.java:493)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>3</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_42()'><b>RallyhoodTC_42</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@22e35e0, org.testng.TestRunner@61ca72bc</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: A window size operation failed because the window is not currently available (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-717&apos;, ip: &apos;192.168.237.62&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
+Session ID: 88BCD01C-B7F9-4A71-9588-22BFF01512A1
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:877)
+	at com.innominds.team.driverinit.DriverManager.loadURL(DriverManager.java:288)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_42(RallyhoodtestcasesEdge.java:505)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace934955095", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace934955095'><pre>org.openqa.selenium.WebDriverException: A window size operation failed because the window is not currently available (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-717&apos;, ip: &apos;192.168.237.62&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
+Session ID: 88BCD01C-B7F9-4A71-9588-22BFF01512A1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:877)
+	at com.innominds.team.driverinit.DriverManager.loadURL(DriverManager.java:288)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_42(RallyhoodtestcasesEdge.java:505)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>1</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_43()'><b>RallyhoodTC_43</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@1e488e5d, org.testng.TestRunner@61ca72bc</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: A window size operation failed because the window is not currently available (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-717&apos;, ip: &apos;192.168.237.62&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
+Session ID: 88BCD01C-B7F9-4A71-9588-22BFF01512A1
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:877)
+	at com.innominds.team.driverinit.DriverManager.loadURL(DriverManager.java:288)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_43(RallyhoodtestcasesEdge.java:517)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1856372248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1856372248'><pre>org.openqa.selenium.WebDriverException: A window size operation failed because the window is not currently available (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-717&apos;, ip: &apos;192.168.237.62&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
+Session ID: 88BCD01C-B7F9-4A71-9588-22BFF01512A1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:877)
+	at com.innominds.team.driverinit.DriverManager.loadURL(DriverManager.java:288)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_43(RallyhoodtestcasesEdge.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>1</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_44()'><b>RallyhoodTC_44</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@35cc35d1, org.testng.TestRunner@61ca72bc</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: A window size operation failed because the window is not currently available (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-717&apos;, ip: &apos;192.168.237.62&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
+Session ID: 88BCD01C-B7F9-4A71-9588-22BFF01512A1
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:877)
+	at com.innominds.team.driverinit.DriverManager.loadURL(DriverManager.java:288)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_44(RallyhoodtestcasesEdge.java:528)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1304862314", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1304862314'><pre>org.openqa.selenium.WebDriverException: A window size operation failed because the window is not currently available (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-717&apos;, ip: &apos;192.168.237.62&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
+Session ID: 88BCD01C-B7F9-4A71-9588-22BFF01512A1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:877)
+	at com.innominds.team.driverinit.DriverManager.loadURL(DriverManager.java:288)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_44(RallyhoodtestcasesEdge.java:528)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>7</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_45()'><b>RallyhoodTC_45</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@45115dbb, org.testng.TestRunner@61ca72bc</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: A window size operation failed because the window is not currently available (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-717&apos;, ip: &apos;192.168.237.62&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
+Session ID: 88BCD01C-B7F9-4A71-9588-22BFF01512A1
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:877)
+	at com.innominds.team.driverinit.DriverManager.loadURL(DriverManager.java:288)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_45(RallyhoodtestcasesEdge.java:539)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace89927444", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace89927444'><pre>org.openqa.selenium.WebDriverException: A window size operation failed because the window is not currently available (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;IM-LP-717&apos;, ip: &apos;192.168.237.62&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
+Session ID: 88BCD01C-B7F9-4A71-9588-22BFF01512A1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:877)
+	at com.innominds.team.driverinit.DriverManager.loadURL(DriverManager.java:288)
+	at com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_45(RallyhoodtestcasesEdge.java:539)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>4</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_01()'><b>RallyhoodTC_01</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@7b3ebc5a, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-494206469" onClick='toggleBox("Output-494206469", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-494206469" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-494206469">
+TC Description : Verify Rallyhood Home screen is displayed and Events/Groups and Classes sections are present<br/>
+Rallyhood home scree have Event header<br/>
+Rallyhood home scree have Groups and Classes header<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_02()'><b>RallyhoodTC_02</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@1c5820a0, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-576871293" onClick='toggleBox("Output-576871293", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-576871293" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-576871293">
+TC Description : Verify error message on browser saying app_uid is invalid. <br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_03()'><b>RallyhoodTC_03</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@5952165, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-689913742" onClick='toggleBox("Output-689913742", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-689913742" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-689913742">
+TC Description : Verify error message on browser saying app_uid is invalid. <br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_05()'><b>RallyhoodTC_05</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@7fc37339, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-1365556439" onClick='toggleBox("Output-1365556439", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1365556439" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1365556439">
+TC Description : Verify single Events/Groups and Classes are present and clickable <br/>
+Rallyhood home scree have Event header<br/>
+Rallyhood home scree have Groups and Classes header<br/>
+Rallyhood home scree have Groups and Classes Listed and Clickable<br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_06()'><b>RallyhoodTC_06</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@76e7946a, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-498455927" onClick='toggleBox("Output-498455927", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-498455927" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-498455927">
+TC Description : Verify presence of Event Name, Event Date and respective Event Image for single Event Present<br/>
+Rallyhood Event Date for Event isOctober
+31
+Tuesday<br/>
+Rallyhood Event Name for Event is : An Important Event <br/>
+Rallyhood Event Image for Event is present <br/>
+******************************************************<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_07()'><b>RallyhoodTC_07</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@6582538, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-418227650" onClick='toggleBox("Output-418227650", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-418227650" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-418227650">
+TC Description : Verify presence of Lable 'Attending?', Button 'Yes' and Button 'No' present in an Event <br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_08()'><b>RallyhoodTC_08</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@72d018af, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-1552800074" onClick='toggleBox("Output-1552800074", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1552800074" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1552800074">
+TC Description : Verify Event Flow when user clicks on Yes button for attending event and ability to change his selection again for single Event<br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'Yes' Button of Event is Clicked<br/>
+Calander icon of Event is displayed<br/>
+Change Button of Event when yes is clicked - is displayed and enabled<br/>
+Change Button of Event when yes is clicked - is Enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_09()'><b>RallyhoodTC_09</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@2289db6f, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-1881147721" onClick='toggleBox("Output-1881147721", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1881147721" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1881147721">
+TC Description : Verify Event Flow when user clicks on 'NO' button for NOT attending the event and ability to change his selection again for single Event<br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is Clicked<br/>
+Lable Not Attending of Event is displayed<br/>
+Change Button of Event when NO is clicked - is displayed and enabled<br/>
+Change Button of Event when NO is clicked - is enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_10()'><b>RallyhoodTC_10</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@377015fe, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-393396980" onClick='toggleBox("Output-393396980", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-393396980" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-393396980">
+TC Description : Verify ability to post comment without selecting 'Yes'/'No' button in an Event<br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_11()'><b>RallyhoodTC_11</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@289232f1, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-1513496572" onClick='toggleBox("Output-1513496572", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1513496572" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1513496572">
+TC Description : Verifying user is able to post comment for an event available and verify all options are working properly for an Event<br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Cancel Button of Comments section of an Event - is enabled and Clicked<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_12()'><b>RallyhoodTC_12</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@b6e32b9, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-1941409122" onClick='toggleBox("Output-1941409122", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1941409122" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1941409122">
+TC Description : 'Read More' link to view full content of an Event is enabled and Clicked in an Event <br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'Read More' link to view full content of an Event is displayed<br/>
+'Read More' link to view full content of an Event is enabled and Clicked<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_13()'><b>RallyhoodTC_13</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@24c372fe, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-1727233820" onClick='toggleBox("Output-1727233820", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1727233820" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1727233820">
+TC Description : Verifying user is able to land on same page after refreshing the page, after clicking 'Yes' to attend an Events<br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'Yes' Button of Event is Clicked<br/>
+Calander icon of Event is displayed<br/>
+Change Button of Event when yes is clicked - is displayed and enabled<br/>
+After Refresh of the Page, landed to the same page<br/>
+Change Button of Event when yes is clicked - is Enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+</div>
+</td>
+<td></td>
+<td>45</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_14()'><b>RallyhoodTC_14</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@3f33e096, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-298529415" onClick='toggleBox("Output-298529415", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-298529415" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-298529415">
+TC Description : Verify presence of Group Name, Members count and respective Event Image for single Group Present <br/>
+Rallyhood Group name for Group is : Swim Class <br/>
+Rallyhood Group Members count of Group is : Swim Class <br/>
+Rallyhood Group Image for Group  is present <br/>
+******************************************************<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_15()'><b>RallyhoodTC_15</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@4d56615b, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-1623740991" onClick='toggleBox("Output-1623740991", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1623740991" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1623740991">
+TC Description : Verify Functionality of Follow button for Class in a Group is working properly <br/>
+Rallyhood home scree have Groups and Classes Listed, First Listed Class in a Group is Clickable and performed Click Operation<br/>
+Group Follow Button is Enabled and Displayed<br/>
+Follow Button in a Group - is enabled and Clicked<br/>
+Group UnFollow Button is Enabled and Displayed<br/>
+Calander icon of Group when Followed is displayed<br/>
+Unfollow Button in a Group - is enabled and Clicked<br/>
+Group Follow Button is Enabled and Displayed<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_16()'><b>RallyhoodTC_16</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@37d7b2f, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-1309525249" onClick='toggleBox("Output-1309525249", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1309525249" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1309525249">
+TC Description : Verify Functionality of 'Read More ..' for Groups and Classes is working properly <br/>
+Rallyhood home scree have Groups and Classes Listed, First Listed Class in a Group is Clickable and performed Click Operation<br/>
+Group Follow Button is Enabled and Displayed<br/>
+'Read More' link to view full content of an Group is displayed<br/>
+'Read More' link to view full content of a Group is enabled and Clicked<br/>
+Group Follow Button is Enabled and Displayed<br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_17()'><b>RallyhoodTC_17</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@529e19b4, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-1211822013" onClick='toggleBox("Output-1211822013", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1211822013" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1211822013">
+TC Description : Verify Functionality of SignUp Process by a user for Classes in a Group for an instructor<br/>
+Rallyhood home scree have Groups and Classes Listed, First Listed Class in a Group is Clickable and performed Click Operation<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Group, for a class, before signUp - Instructor name - is enabled and Clicked<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+In a Groups, for a Class- After SignUp Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Group, for a class, after signUp - Instructor name - is enabled and Clicked<br/>
+In a Group, for a Class, for an Instructor Remove Button is Enabled and Displayed<br/>
+Remove Button in a Group, for an instructor in a class is enabled and Clicked<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_18()'><b>RallyhoodTC_18</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@4c47818a, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-1271008182" onClick='toggleBox("Output-1271008182", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1271008182" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1271008182">
+TC Description : Verify Instructor Name, Date and Time for Classes in a Group<br/>
+Rallyhood home scree have Groups and Classes Listed, First Listed Class in a Group is Clickable and performed Click Operation<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Groups, for a Class Date is displayed: Dec 10th<br/>
+In a Groups, for a Class Time is displayed: 1:30 AM<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_19()'><b>RallyhoodTC_19</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@6fd08541, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-28621835" onClick='toggleBox("Output-28621835", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-28621835" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28621835">
+TC Description : Verify past dated classes are not listed in the classes<br/>
+Rallyhood home scree have Groups and Classes Listed, First Listed Class in a Group is Clickable and performed Click Operation<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Groups, for a Class Date is displayed: Dec 10th<br/>
+The very next upcoming instructors class date : 10-Dec-17 is greater than the current date: 07-Dec-17<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_20()'><b>RallyhoodTC_20</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@4afb9e74, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-717094427" onClick='toggleBox("Output-717094427", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-717094427" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-717094427">
+TC Description : Verify Remove Enrolled Instructor functionality in Classes of a Group<br/>
+Rallyhood home scree have Groups and Classes Listed, First Listed Class in a Group is Clickable and performed Click Operation<br/>
+Groups Current upcoming class is displayed<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Group, for a class, before signUp - Instructor name - is enabled and Clicked<br/>
+In a Group, for a Class, for an Instructor SignUp Button is Enabled and Displayed<br/>
+Sign Up Button in a Group, for an instructor in a class - is enabled and Clicked<br/>
+In a Group, for a class- after signing Up for an instructor:  Calender Icon is displayed<br/>
+In a Groups, for a Class- After SignUp Instructor Name is displayed: Instructor: Jane Blue<br/>
+In a Group, for a class, after signUp - Instructor name - is enabled and Clicked<br/>
+In a Group, for a Class, for an Instructor Remove Button is Enabled and Displayed<br/>
+Remove Button in a Group, for an instructor in a class is enabled and Clicked<br/>
+In a Groups, for a Class- Instructor Name is displayed: Instructor: Jane Blue<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_21()'><b>RallyhoodTC_21</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@35ab0788, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-25914505" onClick='toggleBox("Output-25914505", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25914505" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25914505">
+TC Description : Verify Functionality of UnFollow Option for Class in a Group is working properly <br/>
+Rallyhood home scree have Groups and Classes Listed, First Listed Class in a Group is Clickable and performed Click Operation<br/>
+Group Follow Button is Enabled and Displayed<br/>
+Follow Button in a Group - is enabled and Clicked<br/>
+Group UnFollow Button is Enabled and Displayed<br/>
+Calander icon of Group when Followed is displayed<br/>
+Unfollow Button in a Group - is enabled and Clicked<br/>
+Group Follow Button is Enabled and Displayed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_22()'><b>RallyhoodTC_22</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@33b535d9, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-340999416" onClick='toggleBox("Output-340999416", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-340999416" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-340999416">
+TC Description : Verify All Events are present and clickable <br/>
+Rallyhood home scree have Event header<br/>
+Rallyhood home scree have Groups and Classes header<br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+Rallyhood Events #2 is present and Clickable<br/>
+</div>
+</td>
+<td></td>
+<td>66</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_23()'><b>RallyhoodTC_23</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@6702bae, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-2067896064" onClick='toggleBox("Output-2067896064", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2067896064" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2067896064">
+TC Description : Verify All Groups are present and clickable <br/>
+Rallyhood home scree have Event header<br/>
+Rallyhood home scree have Groups and Classes header<br/>
+Rallyhood Total Groups Present is:: 3<br/>
+Rallyhood Groups #1 is present and Clickable<br/>
+Rallyhood Groups #2 is present and Clickable<br/>
+Rallyhood Groups #3 is present and Clickable<br/>
+</div>
+</td>
+<td></td>
+<td>80</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_24()'><b>RallyhoodTC_24</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@242a7a1f, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-1965200379" onClick='toggleBox("Output-1965200379", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1965200379" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1965200379">
+TC Description : Verify presence of Event Name, Event Date and respective Event Image for All Events Present <br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Event Date for Event #1 is : October
+31
+Tuesday<br/>
+Rallyhood Event Name for Event #1 is : An Important Event <br/>
+Rallyhood Event Image for Event #1 is present <br/>
+******************************************************<br/>
+Rallyhood Event Date for Event #2 is : December
+1
+Friday<br/>
+Rallyhood Event Name for Event #2 is : Another Important Event <br/>
+Rallyhood Event Image for Event #2 is present <br/>
+******************************************************<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_25()'><b>RallyhoodTC_25</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@6d29cce7, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-1600739158" onClick='toggleBox("Output-1600739158", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1600739158" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1600739158">
+TC Description : Verify presence of Group Name, Members count and respective Event Image for All Groups Present <br/>
+Rallyhood Total Groups Present is:: 3<br/>
+Rallyhood Group name for Group #1 is : Swim Class <br/>
+Rallyhood Group Members count of Group #1 is : 7 
+Members <br/>
+Rallyhood Group Image for Group #1 is present <br/>
+******************************************************<br/>
+Rallyhood Group name for Group #2 is : Bicycle Club <br/>
+Rallyhood Group Members count of Group #2 is : 1 
+Members <br/>
+Rallyhood Group Image for Group #2 is present <br/>
+******************************************************<br/>
+Rallyhood Group name for Group #3 is : Running Club <br/>
+Rallyhood Group Members count of Group #3 is : 2 
+Members <br/>
+Rallyhood Group Image for Group #3 is present <br/>
+******************************************************<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_26()'><b>RallyhoodTC_26</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@3a563488, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-1760173228" onClick='toggleBox("Output-1760173228", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1760173228" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1760173228">
+TC Description : Verify presence of Lable 'Attending?', Button 'Yes' and Button 'No' present in All Existing Event <br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+Rallyhood Events #1 verified for the lable and buttons on the screen<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+- - - - - - - - - - - - - - - - - - - - -    - - - - - - - - - - - - - - - -<br/>
+Rallyhood Events #2 is present and Clickable<br/>
+Rallyhood Events #2 verified for the lable and buttons on the screen<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+- - - - - - - - - - - - - - - - - - - - -    - - - - - - - - - - - - - - - -<br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_27()'><b>RallyhoodTC_27</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@6c7e5135, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-872849766" onClick='toggleBox("Output-872849766", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-872849766" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-872849766">
+TC Description : Verify Event Flow when user clicks on Yes button for attending event and ability to change his selection again for All Events Available<br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'Yes' Button of Event is Clicked<br/>
+Calander icon of Event is displayed<br/>
+Change Button of Event when yes is clicked - is displayed and enabled<br/>
+Change Button of Event when yes is clicked - is Enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Events #2 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'Yes' Button of Event is Clicked<br/>
+Calander icon of Event is displayed<br/>
+Change Button of Event when yes is clicked - is displayed and enabled<br/>
+Change Button of Event when yes is clicked - is Enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td></td>
+<td>63</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_28()'><b>RallyhoodTC_28</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@5a59b1cf, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-1798074698" onClick='toggleBox("Output-1798074698", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1798074698" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1798074698">
+TC Description : Verify Event Flow when user clicks on 'NO' button for NOT attending the event and ability to change his selection again for ALL Events Available<br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is Clicked<br/>
+Lable Not Attending of Event is displayed<br/>
+Change Button of Event when NO is clicked - is displayed and enabled<br/>
+Change Button of Event when NO is clicked - is enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Events #2 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is Clicked<br/>
+Lable Not Attending of Event is displayed<br/>
+Change Button of Event when NO is clicked - is displayed and enabled<br/>
+Change Button of Event when NO is clicked - is enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td></td>
+<td>70</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_29()'><b>RallyhoodTC_29</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@42f32375, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-2110155749" onClick='toggleBox("Output-2110155749", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2110155749" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2110155749">
+TC Description : Verify ability to post comment without selecting 'Yes'/'No' button in ALL available Events<br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Events #2 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td></td>
+<td>57</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_30()'><b>RallyhoodTC_30</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@5b75aacb, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-2012104016" onClick='toggleBox("Output-2012104016", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2012104016" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2012104016">
+TC Description : Verifying user is able to post comment for an event available and verify all options are working properly for ALL available Events<br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Cancel Button of Comments section of an Event - is enabled and Clicked<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Events #2 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Cancel Button of Comments section of an Event - is enabled and Clicked<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td></td>
+<td>91</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_31()'><b>RallyhoodTC_31</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@66439c66, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-1322564434" onClick='toggleBox("Output-1322564434", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1322564434" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1322564434">
+TC Description : Verifying user is able to post comment for an event available and verify Author/Entered Comment/Entered Time of an Events<br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+Author Value for Latest comment of Event - is displayed : Kiran Kumar<br/>
+Entered Text Value for Latest comment of Event - is displayed  Test Comment Automation<br/>
+When the latest comment was commented by user for an Event is present - is displayed: 2 minutes ago<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_32()'><b>RallyhoodTC_32</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@5b73261a, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-81074936" onClick='toggleBox("Output-81074936", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-81074936" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-81074936">
+TC Description : Verifying user is able to post comment for an event available and verify Author/Entered Comment/Entered Time of ALL available Events<br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+Author Value for Latest comment of Event - is displayed : Kiran Kumar<br/>
+Entered Text Value for Latest comment of Event - is displayed  Test Comment Automation<br/>
+When the latest comment was commented by user for an Event is present - is displayed: 2 minutes ago<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Events #2 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+Author Value for Latest comment of Event - is displayed : Kiran Kumar<br/>
+Entered Text Value for Latest comment of Event - is displayed  Test Comment Automation<br/>
+When the latest comment was commented by user for an Event is present - is displayed: 2 minutes ago<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td></td>
+<td>48</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_33()'><b>RallyhoodTC_33</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@49c40eb1, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-60331903" onClick='toggleBox("Output-60331903", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-60331903" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-60331903">
+TC Description : Verifying user is able to post comment for an event available and verify Comment Screen all options when Attending 'Yes' is selected for an Events<br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'Yes' Button of Event is Clicked<br/>
+Calander icon of Event is displayed<br/>
+Change Button of Event when yes is clicked - is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+Author Value for Latest comment of Event - is displayed : Kiran Kumar<br/>
+Entered Text Value for Latest comment of Event - is displayed  Test Comment Automation<br/>
+When the latest comment was commented by user for an Event is present - is displayed: 2 minutes ago<br/>
+Change Button of Event when yes is clicked - is Enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>63</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_34()'><b>RallyhoodTC_34</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@7f0028b5, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-116984124" onClick='toggleBox("Output-116984124", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-116984124" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-116984124">
+TC Description : Verifying user is able to post comment for an event available and verify Comment Screen all options when Attending 'Yes' is selected for ALL available Events<br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'Yes' Button of Event is Clicked<br/>
+Calander icon of Event is displayed<br/>
+Change Button of Event when yes is clicked - is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+Author Value for Latest comment of Event - is displayed : Kiran Kumar<br/>
+Entered Text Value for Latest comment of Event - is displayed  Test Comment Automation<br/>
+When the latest comment was commented by user for an Event is present - is displayed: 2 minutes ago<br/>
+Change Button of Event when yes is clicked - is Enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Events #2 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'Yes' Button of Event is Clicked<br/>
+Calander icon of Event is displayed<br/>
+Change Button of Event when yes is clicked - is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+Author Value for Latest comment of Event - is displayed : Kiran Kumar<br/>
+Entered Text Value for Latest comment of Event - is displayed  Test Comment Automation<br/>
+When the latest comment was commented by user for an Event is present - is displayed: 2 minutes ago<br/>
+Change Button of Event when yes is clicked - is Enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td></td>
+<td>124</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_35()'><b>RallyhoodTC_35</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@4d6f274a, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-1225388004" onClick='toggleBox("Output-1225388004", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1225388004" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1225388004">
+TC Description : Verifying user is able to post comment for an event available and verify Comment Screen all options when Attending 'NO' is selected for an Events<br/>
+Rallyhood home screen have Events Listed and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is Clicked<br/>
+Lable Not Attending of Event is displayed<br/>
+Change Button of Event when NO is clicked - is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+Author Value for Latest comment of Event - is displayed : Kiran Kumar<br/>
+Entered Text Value for Latest comment of Event - is displayed  Test Comment Automation<br/>
+When the latest comment was commented by user for an Event is present - is displayed: 2 minutes ago<br/>
+Change Button of Event when NO is clicked - is enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>58</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_36()'><b>RallyhoodTC_36</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@75548e3c, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-166327115" onClick='toggleBox("Output-166327115", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-166327115" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-166327115">
+TC Description : Verifying user is able to post comment for an event available and verify Comment Screen all options when Attending 'NO' is selected for ALL available Events<br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is Clicked<br/>
+Lable Not Attending of Event is displayed<br/>
+Change Button of Event when NO is clicked - is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+Author Value for Latest comment of Event - is displayed : Kiran Kumar<br/>
+Entered Text Value for Latest comment of Event - is displayed  Test Comment Automation<br/>
+When the latest comment was commented by user for an Event is present - is displayed: 2 minutes ago<br/>
+Change Button of Event when NO is clicked - is enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Events #2 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is Clicked<br/>
+Lable Not Attending of Event is displayed<br/>
+Change Button of Event when NO is clicked - is displayed and enabled<br/>
+Comments Textbox of Event - is displayed and enabled<br/>
+'Post a comment' textbox of Event is Clicked<br/>
+Comments Text area to enter comment for an Event - is Enabled and displayed<br/>
+'Post a comment' Actual textarea of Event is Clicked<br/>
+User Enters a comment in Comments field: Test Comment Automation<br/>
+Comments Save Button is Displayed<br/>
+Comments Cancel Button is Enabled and Displayed<br/>
+Save Button of Comments section of an Event - is enabled and Clicked<br/>
+Author Value for Latest comment of Event - is displayed : Kiran Kumar<br/>
+Entered Text Value for Latest comment of Event - is displayed  Test Comment Automation<br/>
+When the latest comment was commented by user for an Event is present - is displayed: 2 minutes ago<br/>
+Change Button of Event when NO is clicked - is enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td></td>
+<td>119</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_37()'><b>RallyhoodTC_37</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@1fea0b3, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-231073747" onClick='toggleBox("Output-231073747", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-231073747" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-231073747">
+TC Description : Verifying user is able to land on same page after refreshing the page, after clicking 'Yes' to attend for All available Events<br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'Yes' Button of Event is Clicked<br/>
+Calander icon of Event is displayed<br/>
+Change Button of Event when yes is clicked - is displayed and enabled<br/>
+After Refresh of the Page, landed to the same page<br/>
+Change Button of Event when yes is clicked - is Enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Events #2 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'Yes' Button of Event is Clicked<br/>
+Calander icon of Event is displayed<br/>
+Change Button of Event when yes is clicked - is displayed and enabled<br/>
+After Refresh of the Page, landed to the same page<br/>
+Change Button of Event when yes is clicked - is Enabled and Clicked<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td></td>
+<td>116</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_38()'><b>RallyhoodTC_38</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@1c7abb0f, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-1685429108" onClick='toggleBox("Output-1685429108", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1685429108" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1685429108">
+TC Description : 'Read More' link to view full content of an Event is enabled and Clicked for all available Events <br/>
+Rallyhood Total Events Present is:: 2<br/>
+Rallyhood Events #1 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'Read More' link to view full content of an Event is displayed<br/>
+'Read More' link to view full content of an Event is enabled and Clicked<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Rallyhood Events #2 is present and Clickable<br/>
+Lable Attending? of Event is displayed<br/>
+'Yes' Button of Event is displayed and enabled<br/>
+'NO' Button of Event is displayed and enabled<br/>
+'Read More' link to view full content of an Event is displayed<br/>
+'Read More' link to view full content of an Event is enabled and Clicked<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td></td>
+<td>61</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_39()'><b>RallyhoodTC_39</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@5041c49, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-366156571" onClick='toggleBox("Output-366156571", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-366156571" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-366156571">
+TC Description : Verify Functionality of Follow button for ALL Class in a Group is working properly <br/>
+Rallyhood Total Groups Present is:: 3<br/>
+Group Follow Button is Enabled and Displayed<br/>
+Follow Button in a Group - is enabled and Clicked<br/>
+Group UnFollow Button is Enabled and Displayed<br/>
+Calander icon of Group when Followed is displayed<br/>
+Unfollow Button in a Group - is enabled and Clicked<br/>
+Group Follow Button is Enabled and Displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Group Follow Button is Enabled and Displayed<br/>
+Follow Button in a Group - is enabled and Clicked<br/>
+Group UnFollow Button is Enabled and Displayed<br/>
+Calander icon of Group when Followed is displayed<br/>
+Unfollow Button in a Group - is enabled and Clicked<br/>
+Group Follow Button is Enabled and Displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Group Follow Button is Enabled and Displayed<br/>
+Follow Button in a Group - is enabled and Clicked<br/>
+Group UnFollow Button is Enabled and Displayed<br/>
+Calander icon of Group when Followed is displayed<br/>
+Unfollow Button in a Group - is enabled and Clicked<br/>
+Group Follow Button is Enabled and Displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+<tr>
+<td title='com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge.RallyhoodTC_40()'><b>RallyhoodTC_40</b><br>Test class: com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge<br>Parameters: com.web.tests.rallyhood.RHhomeDP@56ad321c, org.testng.TestRunner@61ca72bc<br/>
+<a href="#Output-1823447835" onClick='toggleBox("Output-1823447835", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1823447835" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1823447835">
+TC Description : Verify Functionality of 'Read More...' for ALL available Groups and Classes is working properly <br/>
+Rallyhood Total Groups Present is:: 3<br/>
+Group Follow Button is Enabled and Displayed<br/>
+'Read More' link to view full content of an Group is displayed<br/>
+'Read More' link to view full content of a Group is enabled and Clicked<br/>
+Group Follow Button is Enabled and Displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Group Follow Button is Enabled and Displayed<br/>
+'Read More' link is not available as the existing content text is less than 100 chars<br/>
+'Read More' link is not available as the existing content text is less than 100 chars<br/>
+Group Follow Button is Enabled and Displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+Group Follow Button is Enabled and Displayed<br/>
+'Read More' link is not available as the existing content text is less than 100 chars<br/>
+'Read More' link is not available as the existing content text is less than 100 chars<br/>
+Group Follow Button is Enabled and Displayed<br/>
+- - - - - - - - - - - - - -     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br/>
+</div>
+</td>
+<td></td>
+<td>221</td>
+<td>com.web.tests.webtestcases.rallyhood.RallyhoodtestcasesEdge@51c6e775</td></tr>
+</table><p>
+</body>
+</html>
